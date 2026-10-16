@@ -134,7 +134,7 @@ kubernetes-course/
 ├── README.md        ← you are here
 ├── STUDY-PLAN.md    ← levels, progress checkpoints, suggested schedule
 ├── modules/         ← 5 levels × modules (README · LAB · EXERCISES)
-├── capstone/        ← final project with a Production Readiness Review
+├── capstone/        ← final project: a production-ready platform
 ├── docs/            ← learning paths, glossary, cheatsheet, setup, self-check rubric
 └── assets/          ← Kubernetes logo (trademark of The Linux Foundation)
 ```

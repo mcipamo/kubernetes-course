@@ -118,7 +118,7 @@ Tools: **Chaos Mesh**, **LitmusChaos** (CNCF), cloud fault-injection services, o
 
 ### 7. Production Readiness Review (PRR)
 
-A checklist reviewed with the team before a service goes to production (the capstone self-check rubric uses it):
+A checklist reviewed with the team before a service goes to production:
 ownership and on-call, SLOs and alerts, dashboards and runbooks, capacity and autoscaling, resilience
 (replicas, spread, PDB, probes, graceful shutdown), security (RBAC, PSS, NetworkPolicy, secrets),
 delivery (GitOps, rollback), backups and DR, dependencies and their SLOs, load test results.

@@ -7,8 +7,8 @@
 | ~30 h (1–2 weeks) | Modules 01–29 |
 
 You are the founding platform engineer of **KC Shop**, a small online store. Your job: take three services from
-"it runs on my laptop" to a platform you would be proud to put on call for. At the end you present it
-in a **Production Readiness Review (PRR)** — use the [self-check rubric](../docs/self-check-rubric.md) to review it.
+"it runs on my laptop" to a platform you would be proud to put on call for. At the end you show it
+working in a live demo — use the [self-check rubric](../docs/self-check-rubric.md) to review it first.
 
 ---
 
@@ -87,7 +87,7 @@ You may replace the sample images with your own app — the platform requirement
 | 4–5 | Security hardening and policies | `kubectl label --dry-run=server` clean, NetworkPolicy test output |
 | 6–7 | Observability and SLOs | Dashboard, alert rules, burn-rate test |
 | 8–9 | Game day, backup/restore, load test | Game day report, RPO/RTO numbers |
-| 10 | PRR presentation | Slides or a README walkthrough + live demo |
+| 10 | Final demo | A README walkthrough + live demo |
 
 ---
 
@@ -113,7 +113,7 @@ kc-shop-platform/
     └── report-worker/
 ```
 
-Templates: [PRR checklist](PRR-TEMPLATE.md) · [ADR](ADR-TEMPLATE.md) · [Runbook](RUNBOOK-TEMPLATE.md).
+Templates: [ADR](ADR-TEMPLATE.md) · [Runbook](RUNBOOK-TEMPLATE.md).
 
 ---
 
@@ -124,6 +124,6 @@ Templates: [PRR checklist](PRR-TEMPLATE.md) · [ADR](ADR-TEMPLATE.md) · [Runboo
 3. Kill a node; show the SLI and the alert behavior.
 4. Ship a broken release; show automatic canary abort **or** a `git revert` rollback.
 5. Restore the database from backup; show the data and the measured RTO.
-6. Answer the reviewers' PRR questions.
+6. Explain your design decisions and what you would improve next.
 
-> 💡 Tip: rehearse the demo end to end at least once. A PRR is also a test of your runbooks.
+> 💡 Tip: rehearse the demo end to end at least once. The demo is also a test of your runbooks.

@@ -12,7 +12,7 @@ the goal is to spot what is missing.
 | Understanding | Explains *why* for every step | Explains most | Explains some | Only copies commands |
 | Cleanup | Namespace deleted, nothing left | Minor leftovers | Leftovers | No cleanup |
 
-## Capstone — Production Readiness Review
+## Capstone
 
 | Dimension | Question to ask yourself |
 |---|---|
