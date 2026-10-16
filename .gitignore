@@ -1,0 +1,8 @@
+.DS_Store
+*.swp
+.idea/
+.vscode/
+kubeconfig*
+*.kubeconfig
+.claude/settings.local.json
+tmp/
