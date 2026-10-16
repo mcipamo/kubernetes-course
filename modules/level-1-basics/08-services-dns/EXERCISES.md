@@ -80,23 +80,47 @@ Because Services are just selectors + rules, two Services can safely share the s
 ## ❓ Quiz
 
 1. Which Pods receive new connections from a Service?
-   a) The oldest Pod b) All matching Pods c) Pods on the same node d) **Matching Pods that are Ready**
+
+   - a) The oldest Pod
+   - b) All matching Pods
+   - c) Pods on the same node
+   - d) Matching Pods that are Ready
 
 2. What does a headless Service return in DNS?
-   a) A ClusterIP b) A CNAME c) Nothing d) **The IPs of the backing Pods**
+
+   - a) A ClusterIP
+   - b) A CNAME
+   - c) Nothing
+   - d) The IPs of the backing Pods
 
 3. Which component turns a Service IP into a Pod IP on each node?
-   a) CoreDNS b) kubelet c) **kube-proxy (or a CNI replacement)** d) The scheduler
+
+   - a) CoreDNS
+   - b) kubelet
+   - c) kube-proxy (or a CNI replacement)
+   - d) The scheduler
 
 4. NodePorts are allocated by default in the range:
-   a) **30000–32767** b) Any c) 1–1024 d) 8000–9000
+
+   - a) 30000–32767
+   - b) Any
+   - c) 1–1024
+   - d) 8000–9000
 
 5. On kind, a `LoadBalancer` Service shows `<pending>` because:
-   a) It is broken b) NodePort is disabled c) DNS fails d) **There is no cloud controller providing load balancers**
+
+   - a) It is broken
+   - b) NodePort is disabled
+   - c) DNS fails
+   - d) There is no cloud controller providing load balancers
 
 <details><summary>Show answers</summary>
 
-1-d · 2-d · 3-c · 4-a · 5-d
+1. **d)** Matching Pods that are Ready
+2. **d)** The IPs of the backing Pods
+3. **c)** kube-proxy (or a CNI replacement)
+4. **a)** 30000–32767
+5. **d)** There is no cloud controller providing load balancers
 </details>
 
 ➡️ Next module: [09 · ConfigMaps and Secrets](../09-configmaps-secrets/)

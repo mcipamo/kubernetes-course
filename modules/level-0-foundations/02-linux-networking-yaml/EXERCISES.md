@@ -102,23 +102,47 @@ This bottom-up ladder (name → IP → port → app) is the same one you will us
 ## ❓ Quiz
 
 1. Which exit code usually means "killed because of memory"?
-   a) 1 b) 0 c) **137** d) 143
+
+   - a) 1
+   - b) 0
+   - c) 137
+   - d) 143
 
 2. Which character must never be used for YAML indentation?
-   a) **Tab** b) Space c) Dash d) Colon
+
+   - a) Tab
+   - b) Space
+   - c) Dash
+   - d) Colon
 
 3. In a Kubernetes object, who writes the `status` field?
-   a) You b) kubectl c) The container d) **Kubernetes controllers**
+
+   - a) You
+   - b) kubectl
+   - c) The container
+   - d) Kubernetes controllers
 
 4. What protocol and port does DNS normally use?
-   a) TCP 80 b) **UDP 53** c) UDP 443 d) TCP 22
+
+   - a) TCP 80
+   - b) UDP 53
+   - c) UDP 443
+   - d) TCP 22
 
 5. What separates multiple YAML documents in one file?
-   a) `###` b) A blank line c) **`---`** d) `===`
+
+   - a) `###`
+   - b) A blank line
+   - c) `---`
+   - d) `===`
 
 <details><summary>Show answers</summary>
 
-1-c · 2-a · 3-d · 4-b · 5-c
+1. **c)** 137
+2. **a)** Tab
+3. **d)** Kubernetes controllers
+4. **b)** UDP 53
+5. **c)** `---`
 </details>
 
 ➡️ Next module: [03 · Your Local Lab](../03-local-lab/)

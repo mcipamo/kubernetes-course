@@ -172,7 +172,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Least privilege is an availability control**, not just security: a CI token with `cluster-admin` can delete prod.
 - **Bind to groups, not individuals** — joiners/leavers are handled in the IdP.

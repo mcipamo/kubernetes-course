@@ -113,7 +113,7 @@ kubectl get pods -n kube-system
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Cattle, not pets**: your lab should be disposable. If recreating it takes more than 2 minutes, automate it.
 - **Know your context**: put the current context in your shell prompt (`kube-ps1`) or use `kubectx`.

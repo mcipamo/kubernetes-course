@@ -82,23 +82,47 @@ replicas. Include which objects change in etcd and which components watch them.
 ## ❓ Quiz
 
 1. Which component is the only one that talks to etcd?
-   a) **kube-apiserver** b) kubelet c) scheduler d) kube-proxy
+
+   - a) kube-apiserver
+   - b) kubelet
+   - c) scheduler
+   - d) kube-proxy
 
 2. If the control plane goes down, running Pods…
-   a) **Keep running** b) Are deleted c) Move to another node d) Restart
+
+   - a) Keep running
+   - b) Are deleted
+   - c) Move to another node
+   - d) Restart
 
 3. A Pod is `Pending` with **no events**. The most likely cause is:
-   a) Failing probe b) **The scheduler is not running** c) Bad image d) Not enough CPU
+
+   - a) Failing probe
+   - b) The scheduler is not running
+   - c) Bad image
+   - d) Not enough CPU
 
 4. What does "level-triggered" mean for controllers?
-   a) They react only to events b) They run on a timer c) **They act on the current state, whatever the event history** d) They have priority levels
+
+   - a) They react only to events
+   - b) They run on a timer
+   - c) They act on the current state, whatever the event history
+   - d) They have priority levels
 
 5. How does a node tell the control plane it is alive?
-   a) Writing to etcd directly b) ICMP ping c) **Renewing its Lease in `kube-node-lease`** d) SSH
+
+   - a) Writing to etcd directly
+   - b) ICMP ping
+   - c) Renewing its Lease in `kube-node-lease`
+   - d) SSH
 
 <details><summary>Show answers</summary>
 
-1-a · 2-a · 3-b · 4-c · 5-c
+1. **a)** kube-apiserver
+2. **a)** Keep running
+3. **b)** The scheduler is not running
+4. **c)** They act on the current state, whatever the event history
+5. **c)** Renewing its Lease in `kube-node-lease`
 </details>
 
 ➡️ Next module: [05 · Pods](../05-pods/)

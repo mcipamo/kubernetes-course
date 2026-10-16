@@ -77,23 +77,47 @@ In module 24 you will replace this with GitOps and progressive delivery tools (A
 ## ❓ Quiz
 
 1. What does a Deployment directly manage?
-   a) Nodes b) Pods c) **ReplicaSets** d) Services
+
+   - a) Nodes
+   - b) Pods
+   - c) ReplicaSets
+   - d) Services
 
 2. Which change creates a new revision?
-   a) `replicas: 5` b) **A new container image** c) A new label on the Deployment itself d) Scaling to 0
+
+   - a) `replicas: 5`
+   - b) A new container image
+   - c) A new label on the Deployment itself
+   - d) Scaling to 0
 
 3. With `maxUnavailable: 0` and a broken new image, users…
-   a) See errors b) **Keep being served by the old Pods** c) Get redirected d) Lose all Pods
+
+   - a) See errors
+   - b) Keep being served by the old Pods
+   - c) Get redirected
+   - d) Lose all Pods
 
 4. After `progressDeadlineSeconds`, Kubernetes…
-   a) Rolls back automatically b) Deletes the Deployment c) Restarts nodes d) **Marks the rollout as failed (`ProgressDeadlineExceeded`)**
+
+   - a) Rolls back automatically
+   - b) Deletes the Deployment
+   - c) Restarts nodes
+   - d) Marks the rollout as failed (`ProgressDeadlineExceeded`)
 
 5. A native, instant traffic switch between two versions is done by…
-   a) Scaling to 0 b) Editing Pods c) `rollout undo` d) **Changing the Service selector (blue/green)**
+
+   - a) Scaling to 0
+   - b) Editing Pods
+   - c) `rollout undo`
+   - d) Changing the Service selector (blue/green)
 
 <details><summary>Show answers</summary>
 
-1-c · 2-b · 3-b · 4-d · 5-d
+1. **c)** ReplicaSets
+2. **b)** A new container image
+3. **b)** Keep being served by the old Pods
+4. **d)** Marks the rollout as failed (`ProgressDeadlineExceeded`)
+5. **d)** Changing the Service selector (blue/green)
 </details>
 
 ➡️ Next module: [08 · Services and DNS](../08-services-dns/)

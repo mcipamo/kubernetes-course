@@ -160,7 +160,7 @@ sequenceDiagram
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Stateful data needs a backup *and* a tested restore.** A snapshot you never restored is a hope, not a backup.
 - **Use `Retain` for important data** and protect PVCs from accidental deletion (GitOps, RBAC).

@@ -72,23 +72,47 @@ rollouts keep enough capacity.
 ## ❓ Quiz
 
 1. A failing readiness probe causes…
-   a) Pod deletion b) Eviction c) A restart d) **Removal from Service endpoints**
+
+   - a) Pod deletion
+   - b) Eviction
+   - c) A restart
+   - d) Removal from Service endpoints
 
 2. A failing liveness probe causes…
-   a) Removal from endpoints only b) **A container restart** c) Nothing d) Node drain
+
+   - a) Removal from endpoints only
+   - b) A container restart
+   - c) Nothing
+   - d) Node drain
 
 3. While the startup probe has not succeeded, liveness and readiness probes are…
-   a) Running normally b) Doubled c) Ignored after 10 s d) **Disabled**
+
+   - a) Running normally
+   - b) Doubled
+   - c) Ignored after 10 s
+   - d) Disabled
 
 4. Default `terminationGracePeriodSeconds` is:
-   a) **30** b) 60 c) 10 d) 300
+
+   - a) 30
+   - b) 60
+   - c) 10
+   - d) 300
 
 5. Which is a dangerous liveness probe?
-   a) A gRPC health check b) `GET /livez` on localhost c) A TCP check on the app port d) **A check that the database is reachable**
+
+   - a) A gRPC health check
+   - b) `GET /livez` on localhost
+   - c) A TCP check on the app port
+   - d) A check that the database is reachable
 
 <details><summary>Show answers</summary>
 
-1-d · 2-b · 3-d · 4-a · 5-d
+1. **d)** Removal from Service endpoints
+2. **b)** A container restart
+3. **d)** Disabled
+4. **a)** 30
+5. **d)** A check that the database is reachable
 </details>
 
 ➡️ Next module: [12 · Storage](../12-storage/)

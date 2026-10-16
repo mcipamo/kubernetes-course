@@ -6,7 +6,7 @@
 
 ### A Hands-On Guide to Platform Engineering and Reliability
 
-*From zero to expert in Kubernetes, with an SRE mindset*
+*From zero to expert in Kubernetes, one hands-on lab at a time*
 
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-v1.37-326CE5?logo=kubernetes&logoColor=white)](https://kubernetes.io/docs/home/)
 [![Modules](https://img.shields.io/badge/modules-29%20%2B%20capstone-0A7B83)](#-curriculum)
@@ -41,7 +41,7 @@ capstone project**.
 | 🗺️ **See the mechanism** | Diagrams that show *how* it works, not just *what* it is |
 | ⌨️ **Hands on the keyboard** | A guided lab with a check after every step |
 | 💥 **Break it on purpose** | Every lab causes a real failure so you learn to diagnose it |
-| 🧯 **SRE mindset** | What fails in production, how to detect it and how to mitigate it |
+| 🧯 **In production** | What fails in production, how to detect it and how to mitigate it |
 
 ## 🗺️ Course map
 
@@ -105,7 +105,7 @@ flowchart LR
 | 25 | [CRDs and Operators](modules/level-4-expert/25-crds-operators/) | How do I extend the Kubernetes API? |
 | 26 | [Admission policies](modules/level-4-expert/26-admission-policies/) | How do I enforce rules across the cluster? |
 | 27 | [DRA, GPUs and AI workloads](modules/level-4-expert/27-dra-gpus-ai/) | How do I run AI/ML on Kubernetes? |
-| 28 | [SRE reliability engineering](modules/level-4-expert/28-sre-reliability/) | How do I design so it does not go down? |
+| 28 | [Reliability engineering](modules/level-4-expert/28-reliability/) | How do I design so it does not go down? |
 | 29 | [What's new in v1.35 – v1.37](modules/level-4-expert/29-whats-new/) | What is the latest and greatest? |
 
 ### 🎓 [Capstone — Production-ready platform](capstone/)
@@ -163,6 +163,6 @@ This course is independent and not affiliated with or endorsed by the CNCF.
 
 <div align="center">
 
-*Built with ☸️ and an SRE mindset · "Hope is not a strategy"*
+*Built with ☸️ · "Hope is not a strategy"*
 
 </div>

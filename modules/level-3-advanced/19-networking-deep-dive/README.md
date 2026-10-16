@@ -137,7 +137,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Understand your data plane before an incident**: "which component rewrites this packet?" must have an answer.
 - **conntrack tables fill up** under high connection churn: watch `nf_conntrack_count` vs `nf_conntrack_max`.

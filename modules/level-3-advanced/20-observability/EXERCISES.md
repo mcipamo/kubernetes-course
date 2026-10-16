@@ -82,23 +82,47 @@ Fixes:
 ## ❓ Quiz
 
 1. Which component exposes the *state* of Deployments, Pods and Jobs as metrics?
-   a) cAdvisor b) **kube-state-metrics** c) node-exporter d) metrics-server
+
+   - a) cAdvisor
+   - b) kube-state-metrics
+   - c) node-exporter
+   - d) metrics-server
 
 2. Where are container logs stored on a node by default?
-   a) **`/var/log/pods/…`** b) etcd c) The image d) The API server
+
+   - a) `/var/log/pods/…`
+   - b) etcd
+   - c) The image
+   - d) The API server
 
 3. The RED method stands for…
-   a) Requests, Events, Data b) Reliability, Efficiency, Durability c) **Rate, Errors, Duration** d) Restarts, Evictions, Deployments
+
+   - a) Requests, Events, Data
+   - b) Reliability, Efficiency, Durability
+   - c) Rate, Errors, Duration
+   - d) Restarts, Evictions, Deployments
 
 4. Which should page an on-call engineer at 3 a.m.?
-   a) **SLO burn rate threatening the error budget** b) Disk at 70% c) A new image pushed d) One Pod restarted
+
+   - a) SLO burn rate threatening the error budget
+   - b) Disk at 70%
+   - c) A new image pushed
+   - d) One Pod restarted
 
 5. The CNCF standard for traces, metrics and logs instrumentation is…
-   a) Jaeger b) Fluentd c) **OpenTelemetry** d) StatsD
+
+   - a) Jaeger
+   - b) Fluentd
+   - c) OpenTelemetry
+   - d) StatsD
 
 <details><summary>Show answers</summary>
 
-1-b · 2-a · 3-c · 4-a · 5-c
+1. **b)** kube-state-metrics
+2. **a)** `/var/log/pods/…`
+3. **c)** Rate, Errors, Duration
+4. **a)** SLO burn rate threatening the error budget
+5. **c)** OpenTelemetry
 </details>
 
 ➡️ Next module: [21 · Systematic Troubleshooting](../21-troubleshooting/)

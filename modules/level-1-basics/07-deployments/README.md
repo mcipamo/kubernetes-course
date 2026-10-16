@@ -156,7 +156,7 @@ sequenceDiagram
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **A rollout without a readiness probe is a blind rollout**: Kubernetes will happily replace healthy Pods with broken ones.
 - **Gate deploys on `rollout status`**: in CI, a failed rollout must fail the pipeline and trigger rollback.

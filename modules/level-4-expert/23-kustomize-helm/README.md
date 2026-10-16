@@ -196,7 +196,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Render and review what you apply.** Templates hide surprises; diff the output in CI.
 - **Pin chart versions and image tags**; never deploy "latest" of a chart.

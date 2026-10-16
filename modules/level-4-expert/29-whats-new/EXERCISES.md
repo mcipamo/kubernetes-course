@@ -66,23 +66,47 @@ Write a one-page plan to adopt **user namespaces** (GA in v1.36) across all appl
 ## ❓ Quiz
 
 1. A feature at **alpha** stage is…
-   a) Stable b) Removed c) **Off by default, behind a feature gate** d) On by default
+
+   - a) Stable
+   - b) Removed
+   - c) Off by default, behind a feature gate
+   - d) On by default
 
 2. Which v1.36 GA feature maps container root to an unprivileged host user?
-   a) Volume group snapshots b) Declarative validation c) **User namespaces** d) PSI metrics
+
+   - a) Volume group snapshots
+   - b) Declarative validation
+   - c) User namespaces
+   - d) PSI metrics
 
 3. Where can you see, from inside the cluster, which feature gates are on?
-   a) CoreDNS logs b) etcd keys c) `kubectl get nodes` d) **`kubernetes_feature_enabled` metrics**
+
+   - a) CoreDNS logs
+   - b) etcd keys
+   - c) `kubectl get nodes`
+   - d) `kubernetes_feature_enabled` metrics
 
 4. What happened to the community ingress-nginx controller?
-   a) It became GA b) It moved into kube-proxy c) Nothing d) **It was retired; Gateway API is the recommended path**
+
+   - a) It became GA
+   - b) It moved into kube-proxy
+   - c) Nothing
+   - d) It was retired; Gateway API is the recommended path
 
 5. Where are Kubernetes features designed and tracked?
-   a) **KEPs in kubernetes/enhancements** b) Helm charts c) Blog comments d) Docker Hub
+
+   - a) KEPs in kubernetes/enhancements
+   - b) Helm charts
+   - c) Blog comments
+   - d) Docker Hub
 
 <details><summary>Show answers</summary>
 
-1-c · 2-c · 3-d · 4-d · 5-a
+1. **c)** Off by default, behind a feature gate
+2. **c)** User namespaces
+3. **d)** `kubernetes_feature_enabled` metrics
+4. **d)** It was retired; Gateway API is the recommended path
+5. **a)** KEPs in kubernetes/enhancements
 </details>
 
 🎓 **You finished the curriculum.** Time for the [Capstone](../../../capstone/).

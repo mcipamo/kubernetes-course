@@ -146,7 +146,7 @@ kubectl run t --rm -it --image=nicolaka/netshoot --restart=Never -- \
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **A Service with zero endpoints is an outage**. Alert on `kube_endpoint_address_available == 0` (or the EndpointSlice equivalent).
 - **Readiness controls traffic.** A wrong readiness probe can take all endpoints out at once (module 11).

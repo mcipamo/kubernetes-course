@@ -208,7 +208,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Security controls must be rolled out like features**: warn → audit → enforce, with a rollback plan.
 - **Default-deny without allow-DNS is a self-inflicted outage.** Always ship them together.

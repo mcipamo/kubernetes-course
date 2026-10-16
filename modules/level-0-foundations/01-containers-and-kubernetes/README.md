@@ -168,7 +168,7 @@ docker rm -f web
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Images are immutable**: never "patch" a running container. Build a new image.
 - **Pin versions**: `nginx:latest` today and tomorrow can be different images. Use specific tags and, in

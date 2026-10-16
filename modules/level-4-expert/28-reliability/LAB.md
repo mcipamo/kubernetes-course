@@ -210,7 +210,7 @@ kubectl rollout status deployment/checkout
 Wait 5–10 minutes and watch Prometheus → Alerts.
 
 ✅ **Check:** the error ratio rises well above `0.072` (14.4 × 0.5%) and `CheckoutErrorBudgetBurnFast`
-goes `pending` → `firing`. Roll back like an SRE:
+goes `pending` → `firing`. Roll back first, investigate later:
 
 ```bash
 kubectl rollout undo deployment/checkout

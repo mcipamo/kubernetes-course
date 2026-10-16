@@ -144,7 +144,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Read the urgent upgrade notes, every time.** Most upgrade incidents were announced months earlier.
 - **Adopt features at GA by default**; use beta only with a clear benefit, a test plan and a rollback.

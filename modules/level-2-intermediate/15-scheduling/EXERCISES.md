@@ -82,23 +82,47 @@ frontend, (2) a GPU inference service, (3) nightly batch jobs that must never di
 ## ❓ Quiz
 
 1. A taint with effect `NoExecute`…
-   a) Is ignored by DaemonSets b) **Also evicts running Pods without a matching toleration** c) Deletes the node d) Only affects new Pods
+
+   - a) Is ignored by DaemonSets
+   - b) Also evicts running Pods without a matching toleration
+   - c) Deletes the node
+   - d) Only affects new Pods
 
 2. A toleration…
-   a) Sets priority b) Removes the taint c) **Allows the Pod to be scheduled on the tainted node** d) Forces the Pod onto the tainted node
+
+   - a) Sets priority
+   - b) Removes the taint
+   - c) Allows the Pod to be scheduled on the tainted node
+   - d) Forces the Pod onto the tainted node
 
 3. Which field defines "the same place" for affinity and spread rules?
-   a) `weight` b) **`topologyKey`** c) `maxSkew` d) `labelSelector`
+
+   - a) `weight`
+   - b) `topologyKey`
+   - c) `maxSkew`
+   - d) `labelSelector`
 
 4. What does the scheduler compare against free capacity during filtering?
-   a) Priority b) **Requests** c) Usage d) Limits
+
+   - a) Priority
+   - b) Requests
+   - c) Usage
+   - d) Limits
 
 5. When can preemption happen?
-   a) Every hour b) **When a higher-priority Pod cannot be scheduled** c) When a Pod is slow d) On node reboot
+
+   - a) Every hour
+   - b) When a higher-priority Pod cannot be scheduled
+   - c) When a Pod is slow
+   - d) On node reboot
 
 <details><summary>Show answers</summary>
 
-1-b · 2-c · 3-b · 4-b · 5-b
+1. **b)** Also evicts running Pods without a matching toleration
+2. **c)** Allows the Pod to be scheduled on the tainted node
+3. **b)** `topologyKey`
+4. **b)** Requests
+5. **b)** When a higher-priority Pod cannot be scheduled
 </details>
 
 🎯 **End of Level 2.** Do **Practice round 2** (CKA style, part 1): 8 tasks in 60 minutes covering modules 10–15.

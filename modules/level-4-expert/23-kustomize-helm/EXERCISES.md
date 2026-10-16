@@ -101,23 +101,47 @@ kubeconform -strict -summary -kubernetes-version 1.37.0 -ignore-missing-schemas 
 ## ❓ Quiz
 
 1. What does `configMapGenerator` add to the ConfigMap name?
-   a) A timestamp b) **A content hash** c) The namespace d) A version number
+
+   - a) A timestamp
+   - b) A content hash
+   - c) The namespace
+   - d) A version number
 
 2. Where does Helm 3 store release history?
-   a) **Secrets in the release namespace** b) Tiller c) The chart repository d) etcd directly
+
+   - a) Secrets in the release namespace
+   - b) Tiller
+   - c) The chart repository
+   - d) etcd directly
 
 3. Which flag makes `helm upgrade` roll back automatically on failure?
-   a) **`--atomic`** b) `--force` c) `--wait` d) `--rollback`
+
+   - a) `--atomic`
+   - b) `--force`
+   - c) `--wait`
+   - d) `--rollback`
 
 4. Kustomize is…
-   a) A package registry b) A GitOps server c) A template engine d) **A template-free patching tool built into kubectl**
+
+   - a) A package registry
+   - b) A GitOps server
+   - c) A template engine
+   - d) A template-free patching tool built into kubectl
 
 5. `helm template` …
-   a) **Renders manifests locally without installing** b) Creates a chart c) Installs a release d) Lints values
+
+   - a) Renders manifests locally without installing
+   - b) Creates a chart
+   - c) Installs a release
+   - d) Lints values
 
 <details><summary>Show answers</summary>
 
-1-b · 2-a · 3-a · 4-d · 5-a
+1. **b)** A content hash
+2. **a)** Secrets in the release namespace
+3. **a)** `--atomic`
+4. **d)** A template-free patching tool built into kubectl
+5. **a)** Renders manifests locally without installing
 </details>
 
 ➡️ Next module: [24 · GitOps and CI/CD](../24-gitops-cicd/)

@@ -179,7 +179,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **A webhook is in the critical path of every matching request.** Its availability caps the cluster's.
 - **Always exclude `kube-system`** (and the policy engine's namespace) from blocking policies — or you cannot repair the cluster.

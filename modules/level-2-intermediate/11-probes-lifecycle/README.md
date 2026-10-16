@@ -179,7 +179,7 @@ sequenceDiagram
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Readiness protects users; liveness protects the app from itself.** Mixing them up is a top cause of self-inflicted outages.
 - **Never let a shared dependency fail every liveness probe at once.**

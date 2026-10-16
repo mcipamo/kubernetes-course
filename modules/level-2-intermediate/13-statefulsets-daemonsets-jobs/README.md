@@ -184,7 +184,7 @@ flowchart TD
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Make Jobs idempotent**: they *will* be retried (node failures, preemption). Running twice must be safe.
 - **Always set `activeDeadlineSeconds` and `ttlSecondsAfterFinished`**: stuck Jobs and thousands of finished Pods are common outages of the slow kind.

@@ -134,23 +134,47 @@ Without the ReferenceGrant, the route shows `ResolvedRefs=False, RefNotPermitted
 ## ❓ Quiz
 
 1. Which object defines ports, protocols and TLS certificates in Gateway API?
-   a) **Gateway** b) HTTPRoute c) GatewayClass d) ReferenceGrant
+
+   - a) Gateway
+   - b) HTTPRoute
+   - c) GatewayClass
+   - d) ReferenceGrant
 
 2. In Ingress, advanced features like canaries are usually configured with…
-   a) Spec fields b) ConfigMaps only c) **Controller-specific annotations** d) They are impossible
+
+   - a) Spec fields
+   - b) ConfigMaps only
+   - c) Controller-specific annotations
+   - d) They are impossible
 
 3. An HTTPRoute shows `Accepted=False, NotAllowedByListeners`. The likely cause is…
-   a) **The Gateway listener does not allow routes from that namespace** b) Bad TLS c) DNS d) The Service does not exist
+
+   - a) The Gateway listener does not allow routes from that namespace
+   - b) Bad TLS
+   - c) DNS
+   - d) The Service does not exist
 
 4. A weighted split `weight: 90` / `weight: 10` sends to the second backend about…
-   a) 90% b) 1% c) **10%** d) 50%
+
+   - a) 90%
+   - b) 1%
+   - c) 10%
+   - d) 50%
 
 5. Which tool automates TLS certificates for Gateways and Ingresses?
-   a) **cert-manager** b) CoreDNS c) kube-proxy d) Kustomize
+
+   - a) cert-manager
+   - b) CoreDNS
+   - c) kube-proxy
+   - d) Kustomize
 
 <details><summary>Show answers</summary>
 
-1-a · 2-c · 3-a · 4-c · 5-a
+1. **a)** Gateway
+2. **c)** Controller-specific annotations
+3. **a)** The Gateway listener does not allow routes from that namespace
+4. **c)** 10%
+5. **a)** cert-manager
 </details>
 
 ➡️ Next module: [15 · Scheduling](../15-scheduling/)

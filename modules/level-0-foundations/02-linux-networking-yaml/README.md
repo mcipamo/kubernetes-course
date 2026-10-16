@@ -158,7 +158,7 @@ kubectl apply -f manifest.yaml --dry-run=server
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Most "Kubernetes problems" are networking or DNS problems.** Learn `curl`, `nslookup` and `nc` well.
 - **Handle `SIGTERM`** in your app: finish in-flight requests, then exit. That is what makes deploys invisible to users.

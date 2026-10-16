@@ -86,7 +86,7 @@ There are no grades — this is a hands-on guide. Use these checkpoints to know 
 
 | File | Contents |
 |---|---|
-| `README.md` | Analogy · concepts · diagram · commands · SRE mindset · common mistakes · references |
+| `README.md` | Analogy · concepts · diagram · commands · in production · common mistakes · references |
 | `LAB.md` | Step-by-step lab with ✅ checks and a 💥 deliberate failure |
 | `EXERCISES.md` | 🟢🟡🔴 exercises · quiz · solutions |
 

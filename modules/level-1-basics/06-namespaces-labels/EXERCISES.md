@@ -72,23 +72,47 @@ kubectl label pod web-7d4b9c-abcde app=web-quarantine --overwrite
 ## ❓ Quiz
 
 1. By default, can a Pod in namespace `a` reach a Pod in namespace `b`?
-   a) Only through Ingress b) No c) **Yes** d) Only with RBAC
+
+   - a) Only through Ingress
+   - b) No
+   - c) Yes
+   - d) Only with RBAC
 
 2. Which of these can you use in a selector?
-   a) Names b) Both c) **Labels** d) Annotations
+
+   - a) Names
+   - b) Both
+   - c) Labels
+   - d) Annotations
 
 3. The full DNS name of Service `api` in namespace `shop` is:
-   a) **`api.shop.svc.cluster.local`** b) `api.cluster.local` c) `api.svc.shop` d) `shop.api.svc`
+
+   - a) `api.shop.svc.cluster.local`
+   - b) `api.cluster.local`
+   - c) `api.svc.shop`
+   - d) `shop.api.svc`
 
 4. Which field of a Deployment cannot be changed after creation?
-   a) `template` b) `strategy` c) **`selector`** d) `replicas`
+
+   - a) `template`
+   - b) `strategy`
+   - c) `selector`
+   - d) `replicas`
 
 5. `kubectl get pods -l '!canary'` returns Pods that…
-   a) Have `canary=false` b) Fail c) Have any canary value d) **Do not have the `canary` key at all**
+
+   - a) Have `canary=false`
+   - b) Fail
+   - c) Have any canary value
+   - d) Do not have the `canary` key at all
 
 <details><summary>Show answers</summary>
 
-1-c · 2-c · 3-a · 4-c · 5-d
+1. **c)** Yes
+2. **c)** Labels
+3. **a)** `api.shop.svc.cluster.local`
+4. **c)** `selector`
+5. **d)** Do not have the `canary` key at all
 </details>
 
 ➡️ Next module: [07 · ReplicaSets and Deployments](../07-deployments/)

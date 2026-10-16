@@ -91,23 +91,47 @@ composition first. Build an operator only with a clear owner, tests and an on-ca
 ## ❓ Quiz
 
 1. What does a CRD add to the cluster?
-   a) **A new resource type served by the API server** b) A new namespace c) A new node d) A new controller
+
+   - a) A new resource type served by the API server
+   - b) A new namespace
+   - c) A new node
+   - d) A new controller
 
 2. Which mechanism deletes a Deployment automatically when its parent custom resource is deleted?
-   a) **Owner references (garbage collection)** b) Labels c) Finalizers d) Admission webhooks
+
+   - a) Owner references (garbage collection)
+   - b) Labels
+   - c) Finalizers
+   - d) Admission webhooks
 
 3. CEL rules in a CRD schema go in…
-   a) a ConfigMap b) **`x-kubernetes-validations`** c) annotations d) the controller
+
+   - a) a ConfigMap
+   - b) `x-kubernetes-validations`
+   - c) annotations
+   - d) the controller
 
 4. An object with a `deletionTimestamp` that never disappears most likely has…
-   a) **A pending finalizer** b) A wrong label c) A bad schema d) No owner
+
+   - a) A pending finalizer
+   - b) A wrong label
+   - c) A bad schema
+   - d) No owner
 
 5. Why use the `status` subresource?
-   a) To encrypt status b) To make status public c) **To separate spec (user) from status (controller) updates and permissions** d) It is required for printer columns
+
+   - a) To encrypt status
+   - b) To make status public
+   - c) To separate spec (user) from status (controller) updates and permissions
+   - d) It is required for printer columns
 
 <details><summary>Show answers</summary>
 
-1-a · 2-a · 3-b · 4-a · 5-c
+1. **a)** A new resource type served by the API server
+2. **a)** Owner references (garbage collection)
+3. **b)** `x-kubernetes-validations`
+4. **a)** A pending finalizer
+5. **c)** To separate spec (user) from status (controller) updates and permissions
 </details>
 
 ➡️ Next module: [26 · Admission Policies](../26-admission-policies/)

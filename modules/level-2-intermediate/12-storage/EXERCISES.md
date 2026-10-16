@@ -80,23 +80,47 @@ minutes and an RTO of 1 hour.
 ## ❓ Quiz
 
 1. Which object is a *request* for storage made by a user?
-   a) **PVC** b) CSIDriver c) StorageClass d) PV
+
+   - a) PVC
+   - b) CSIDriver
+   - c) StorageClass
+   - d) PV
 
 2. `WaitForFirstConsumer` means…
-   a) **The volume is provisioned after the Pod is scheduled** b) Nothing c) Pods wait for the volume to fill d) The PVC waits for an admin
+
+   - a) The volume is provisioned after the Pod is scheduled
+   - b) Nothing
+   - c) Pods wait for the volume to fill
+   - d) The PVC waits for an admin
 
 3. Which access mode allows only a single Pod to mount the volume?
-   a) **RWOP** b) RWO c) RWX d) ROX
+
+   - a) RWOP
+   - b) RWO
+   - c) RWX
+   - d) ROX
 
 4. With `reclaimPolicy: Delete`, deleting the PVC…
-   a) Keeps the data b) Moves it c) Snapshots it d) **Deletes the PV and the underlying storage**
+
+   - a) Keeps the data
+   - b) Moves it
+   - c) Snapshots it
+   - d) Deletes the PV and the underlying storage
 
 5. `emptyDir` data survives…
-   a) **Container restarts within the same Pod** b) Node failure c) Everything d) Pod deletion
+
+   - a) Container restarts within the same Pod
+   - b) Node failure
+   - c) Everything
+   - d) Pod deletion
 
 <details><summary>Show answers</summary>
 
-1-a · 2-a · 3-a · 4-d · 5-a
+1. **a)** PVC
+2. **a)** The volume is provisioned after the Pod is scheduled
+3. **a)** RWOP
+4. **d)** Deletes the PV and the underlying storage
+5. **a)** Container restarts within the same Pod
 </details>
 
 ➡️ Next module: [13 · StatefulSets, DaemonSets, Jobs and CronJobs](../13-statefulsets-daemonsets-jobs/)

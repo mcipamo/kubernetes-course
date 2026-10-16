@@ -71,23 +71,47 @@ first? How do you get the disks back later?
 ## ❓ Quiz
 
 1. Which controller gives each replica its own PVC automatically?
-   a) **StatefulSet** b) Job c) Deployment d) DaemonSet
+
+   - a) StatefulSet
+   - b) Job
+   - c) Deployment
+   - d) DaemonSet
 
 2. A Pod of StatefulSet `web` (headless Service `web`, namespace `prod`) is reachable at:
-   a) `web-0.prod` b) **`web-0.web.prod.svc.cluster.local`** c) `0.web.prod` d) `web.prod.svc.cluster.local`
+
+   - a) `web-0.prod`
+   - b) `web-0.web.prod.svc.cluster.local`
+   - c) `0.web.prod`
+   - d) `web.prod.svc.cluster.local`
 
 3. Which `restartPolicy` values are allowed in a Job template?
-   a) Only Never b) **Never or OnFailure** c) Any d) Always
+
+   - a) Only Never
+   - b) Never or OnFailure
+   - c) Any
+   - d) Always
 
 4. A CronJob with `concurrencyPolicy: Replace`…
-   a) **Cancels the running Job and starts the new one** b) Skips new runs c) Runs them in parallel d) Fails
+
+   - a) Cancels the running Job and starts the new one
+   - b) Skips new runs
+   - c) Runs them in parallel
+   - d) Fails
 
 5. How do you trigger a CronJob immediately?
-   a) Edit the schedule to `now` b) **`kubectl create job x --from=cronjob/name`** c) `kubectl run cronjob` d) Restart the controller
+
+   - a) Edit the schedule to `now`
+   - b) `kubectl create job x --from=cronjob/name`
+   - c) `kubectl run cronjob`
+   - d) Restart the controller
 
 <details><summary>Show answers</summary>
 
-1-a · 2-b · 3-b · 4-a · 5-b
+1. **a)** StatefulSet
+2. **b)** `web-0.web.prod.svc.cluster.local`
+3. **b)** Never or OnFailure
+4. **a)** Cancels the running Job and starts the new one
+5. **b)** `kubectl create job x --from=cronjob/name`
 </details>
 
 ➡️ Next module: [14 · Ingress and Gateway API](../14-ingress-gateway-api/)

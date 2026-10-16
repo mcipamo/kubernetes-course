@@ -172,7 +172,7 @@ sequenceDiagram
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **An operator is production software you now run**: version it, monitor it, give it SLOs, test its upgrades.
 - **Controllers must be idempotent and level-triggered**; every reconcile may be the first one after a crash.

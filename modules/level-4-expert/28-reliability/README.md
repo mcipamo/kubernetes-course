@@ -1,6 +1,6 @@
 <img src="../../../assets/kubernetes-icon-color.svg" alt="Kubernetes logo" width="56" align="right">
 
-# 28 · SRE Reliability Engineering
+# 28 · Reliability Engineering
 
 | Level | Duration | Prerequisites |
 |---|---|---|
@@ -160,7 +160,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **100% is the wrong target.** Pick the lowest SLO users are happy with; every extra nine costs ~10×.
 - **Alert on budget burn, not on CPU.** Causes go to dashboards and tickets.

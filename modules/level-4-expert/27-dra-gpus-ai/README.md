@@ -165,7 +165,7 @@ sequenceDiagram
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Accelerators are the most expensive resource in the cluster**: measure utilization (DCGM), not just allocation.
 - **Idle GPUs are an incident for the budget**: use queueing, quotas and preemption so they are never parked.

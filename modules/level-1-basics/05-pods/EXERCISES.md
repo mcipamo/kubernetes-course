@@ -114,23 +114,47 @@ spec:
 ## ❓ Quiz
 
 1. Containers in the same Pod share…
-   a) The image b) **The network namespace (IP and ports)** c) Nothing d) The filesystem
+
+   - a) The image
+   - b) The network namespace (IP and ports)
+   - c) Nothing
+   - d) The filesystem
 
 2. `CrashLoopBackOff` is…
-   a) An event type b) A Pod phase c) **A reason for a waiting container** d) A node condition
+
+   - a) An event type
+   - b) A Pod phase
+   - c) A reason for a waiting container
+   - d) A node condition
 
 3. How do you declare a native sidecar?
-   a) An annotation b) `sidecar: true` c) **An init container with `restartPolicy: Always`** d) A second `containers` entry
+
+   - a) An annotation
+   - b) `sidecar: true`
+   - c) An init container with `restartPolicy: Always`
+   - d) A second `containers` entry
 
 4. Exit code 137 with reason `OOMKilled` means:
-   a) The image is missing b) The app returned an error c) **The container exceeded its memory limit** d) The node rebooted
+
+   - a) The image is missing
+   - b) The app returned an error
+   - c) The container exceeded its memory limit
+   - d) The node rebooted
 
 5. The best command to see why a container crashed **before** its current restart:
-   a) `kubectl logs` b) **`kubectl logs --previous`** c) `kubectl top` d) `kubectl get events`
+
+   - a) `kubectl logs`
+   - b) `kubectl logs --previous`
+   - c) `kubectl top`
+   - d) `kubectl get events`
 
 <details><summary>Show answers</summary>
 
-1-b · 2-c · 3-c · 4-c · 5-b
+1. **b)** The network namespace (IP and ports)
+2. **c)** A reason for a waiting container
+3. **c)** An init container with `restartPolicy: Always`
+4. **c)** The container exceeded its memory limit
+5. **b)** `kubectl logs --previous`
 </details>
 
 ➡️ Next module: [06 · Namespaces, Labels and Selectors](../06-namespaces-labels/)

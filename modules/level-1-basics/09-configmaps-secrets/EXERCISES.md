@@ -96,23 +96,47 @@ List four ways a Secret's value can leak in a typical cluster and one control fo
 ## ❓ Quiz
 
 1. Is base64 in a Secret a form of encryption?
-   a) Only in etcd b) Only with `stringData` c) **No, it is only encoding** d) Yes
+
+   - a) Only in etcd
+   - b) Only with `stringData`
+   - c) No, it is only encoding
+   - d) Yes
 
 2. A ConfigMap consumed with `envFrom` changes. The running container…
-   a) Sees the new value at once b) Gets it within 60 s c) Crashes d) **Keeps the old value until restarted**
+
+   - a) Sees the new value at once
+   - b) Gets it within 60 s
+   - c) Crashes
+   - d) Keeps the old value until restarted
 
 3. Which volume option prevents automatic updates of a mounted ConfigMap?
-   a) `defaultMode` b) **`subPath`** c) `items` d) `readOnly`
+
+   - a) `defaultMode`
+   - b) `subPath`
+   - c) `items`
+   - d) `readOnly`
 
 4. Where does the kubelet store mounted Secret files on the node?
-   a) The image layer b) The node disk c) etcd d) **tmpfs (memory)**
+
+   - a) The image layer
+   - b) The node disk
+   - c) etcd
+   - d) tmpfs (memory)
 
 5. What does `immutable: true` give you?
-   a) Encryption b) Base64 encoding c) **Protection from edits and less load on the API server** d) Automatic rotation
+
+   - a) Encryption
+   - b) Base64 encoding
+   - c) Protection from edits and less load on the API server
+   - d) Automatic rotation
 
 <details><summary>Show answers</summary>
 
-1-c · 2-d · 3-b · 4-d · 5-c
+1. **c)** No, it is only encoding
+2. **d)** Keeps the old value until restarted
+3. **b)** `subPath`
+4. **d)** tmpfs (memory)
+5. **c)** Protection from edits and less load on the API server
 </details>
 
 🎯 **End of Level 1.** Before moving on, do **Practice round 1** (CKAD style): ask your tutor or a

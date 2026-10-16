@@ -76,23 +76,47 @@ your risk appetite. Either way, start with mTLS + metrics, add L7 policies gradu
 ## ❓ Quiz
 
 1. In the Kubernetes network model, Pod-to-Pod traffic across nodes…
-   a) Needs a Service b) **Uses Pod IPs without NAT** c) Goes through the API server d) Is always NATed
+
+   - a) Needs a Service
+   - b) Uses Pod IPs without NAT
+   - c) Goes through the API server
+   - d) Is always NATed
 
 2. Which component assigns a Pod its IP address?
-   a) kube-proxy b) CoreDNS c) The scheduler d) **The CNI plugin (IPAM)**
+
+   - a) kube-proxy
+   - b) CoreDNS
+   - c) The scheduler
+   - d) The CNI plugin (IPAM)
 
 3. Where is the Service IP translated to a Pod IP in iptables/nftables mode?
-   a) In CoreDNS b) On the destination node c) In etcd d) **On the node where the client Pod runs**
+
+   - a) In CoreDNS
+   - b) On the destination node
+   - c) In etcd
+   - d) On the node where the client Pod runs
 
 4. Why does one keep-alive connection always reach the same Pod?
-   a) Session affinity default b) DNS caching c) Readiness d) **conntrack keeps the NAT decision for the connection**
+
+   - a) Session affinity default
+   - b) DNS caching
+   - c) Readiness
+   - d) conntrack keeps the NAT decision for the connection
 
 5. Which API lets you add Service IP ranges without rebuilding the cluster?
-   a) EndpointSlice b) IPPool c) Ingress d) **ServiceCIDR**
+
+   - a) EndpointSlice
+   - b) IPPool
+   - c) Ingress
+   - d) ServiceCIDR
 
 <details><summary>Show answers</summary>
 
-1-b · 2-d · 3-d · 4-d · 5-d
+1. **b)** Uses Pod IPs without NAT
+2. **d)** The CNI plugin (IPAM)
+3. **d)** On the node where the client Pod runs
+4. **d)** conntrack keeps the NAT decision for the connection
+5. **d)** ServiceCIDR
 </details>
 
 ➡️ Next module: [20 · Observability](../20-observability/)

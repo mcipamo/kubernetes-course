@@ -188,7 +188,7 @@ stateDiagram-v2
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Never run bare Pods in production.** No controller means no self-healing.
 - **Restart count is a leading indicator.** A slowly rising `restartCount` is an incident waiting to happen; alert on it.

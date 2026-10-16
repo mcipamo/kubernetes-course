@@ -90,23 +90,47 @@ between containers, zero-downtime updates, storage, security, an API, high avail
 ## ❓ Quiz
 
 1. What do all containers on the same host share?
-   a) The IP address b) The root user c) **The kernel** d) The filesystem
+
+   - a) The IP address
+   - b) The root user
+   - c) The kernel
+   - d) The filesystem
 
 2. Which Linux feature limits a container's memory?
-   a) chroot b) **cgroups** c) iptables d) namespaces
+
+   - a) chroot
+   - b) cgroups
+   - c) iptables
+   - d) namespaces
 
 3. Which runtime does modern Kubernetes **not** use directly?
-   a) **Docker Engine (dockershim)** b) CRI-O c) containerd d) None of them
+
+   - a) Docker Engine (dockershim)
+   - b) CRI-O
+   - c) containerd
+   - d) None of them
 
 4. What is the safest way to reference an image in production?
-   a) No tag b) **`@sha256:<digest>`** c) `:stable` d) `:latest`
+
+   - a) No tag
+   - b) `@sha256:<digest>`
+   - c) `:stable`
+   - d) `:latest`
 
 5. "I always want 3 replicas" is an example of:
-   a) A cron job b) **Declarative desired state** c) Imperative programming d) A deploy script
+
+   - a) A cron job
+   - b) Declarative desired state
+   - c) Imperative programming
+   - d) A deploy script
 
 <details><summary>Show answers</summary>
 
-1-c · 2-b · 3-a · 4-b · 5-b
+1. **c)** The kernel
+2. **b)** cgroups
+3. **a)** Docker Engine (dockershim)
+4. **b)** `@sha256:<digest>`
+5. **b)** Declarative desired state
 </details>
 
 ➡️ Next module: [02 · Linux, Networking and YAML](../02-linux-networking-yaml/)

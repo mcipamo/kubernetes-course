@@ -156,7 +156,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Observability is for unknown unknowns.** Dashboards answer known questions; high-cardinality, correlated signals answer new ones.
 - **Watch cardinality**: a label with user IDs can take down Prometheus. Labels are for bounded dimensions.

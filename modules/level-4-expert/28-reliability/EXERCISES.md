@@ -1,4 +1,4 @@
-# 📝 Exercises 28 · SRE Reliability Engineering
+# 📝 Exercises 28 · Reliability Engineering
 
 ## 🟢 Exercise 1 · Budget math
 A service has a 99.9% availability SLO over 30 days and serves 50 million requests per month. How
@@ -49,7 +49,7 @@ Review these PDBs for a 3-replica Deployment: (a) `minAvailable: 3`; (b) `maxUna
 </details>
 
 ## 🔴 Challenge · Production Readiness Review
-You are the SRE reviewing the launch of a new `payments` service on Kubernetes. Write the 15 questions
+You are reviewing the launch of a new `payments` service on Kubernetes. Write the 15 questions
 you will ask, grouped by area.
 
 <details><summary>Show solution</summary>
@@ -69,23 +69,47 @@ you will ask, grouped by area.
 ## ❓ Quiz
 
 1. An SLO of 99.9% over 30 days allows about how much full downtime?
-   a) **43 min** b) 4 min c) 1 day d) 7 h
+
+   - a) 43 min
+   - b) 4 min
+   - c) 1 day
+   - d) 7 h
 
 2. A burn rate of 1 means…
-   a) 1% errors b) **You would consume exactly the whole budget by the end of the window** c) The service is down d) One alert per hour
+
+   - a) 1% errors
+   - b) You would consume exactly the whole budget by the end of the window
+   - c) The service is down
+   - d) One alert per hour
 
 3. PodDisruptionBudgets protect against…
-   a) Node hardware failures b) Container crashes c) OOM kills d) **Voluntary disruptions like drains and scale-downs**
+
+   - a) Node hardware failures
+   - b) Container crashes
+   - c) OOM kills
+   - d) Voluntary disruptions like drains and scale-downs
 
 4. Why use two windows in burn-rate alerts?
-   a) For two teams b) Prometheus requires it c) To double the alerts d) **Significance (long window) plus fast reset (short window)**
+
+   - a) For two teams
+   - b) Prometheus requires it
+   - c) To double the alerts
+   - d) Significance (long window) plus fast reset (short window)
 
 5. The first step of a chaos experiment is…
-   a) Notify customers b) Install a tool c) Kill a node d) **Define the steady state (SLI) and a hypothesis**
+
+   - a) Notify customers
+   - b) Install a tool
+   - c) Kill a node
+   - d) Define the steady state (SLI) and a hypothesis
 
 <details><summary>Show answers</summary>
 
-1-a · 2-b · 3-d · 4-d · 5-d
+1. **a)** 43 min
+2. **b)** You would consume exactly the whole budget by the end of the window
+3. **d)** Voluntary disruptions like drains and scale-downs
+4. **d)** Significance (long window) plus fast reset (short window)
+5. **d)** Define the steady state (SLI) and a hypothesis
 </details>
 
 ➡️ Next module: [29 · What's New in v1.35 – v1.37](../29-whats-new/)

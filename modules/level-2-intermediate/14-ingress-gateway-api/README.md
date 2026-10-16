@@ -201,7 +201,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **The edge is a shared critical dependency.** Run gateways with ≥ 2 replicas, PDBs, anti-affinity and their own SLOs.
 - **Use canaries with real metrics** (error rate, latency) to decide promotion — module 24 automates it.

@@ -155,7 +155,7 @@ docker exec kc-control-plane ls /etc/kubernetes/manifests
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **The data plane survives a control plane outage.** If the API server dies, running Pods keep serving
   traffic; you just cannot change anything. Know this before you panic during an incident.

@@ -153,7 +153,7 @@ kubectl rollout history deploy/<d>; kubectl rollout undo deploy/<d>
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Mitigation beats diagnosis.** Users care that it works, not why it broke. Roll back first.
 - **Write down hypotheses and evidence** during the incident (a shared doc). It stops circular debugging.

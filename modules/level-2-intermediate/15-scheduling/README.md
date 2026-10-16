@@ -190,7 +190,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Spread replicas across zones and nodes** — a single-zone Deployment is one outage away from 100% failure.
 - **Hard rules can make Pods unschedulable** during incidents (a zone down + `DoNotSchedule`). Decide consciously between availability and placement purity.

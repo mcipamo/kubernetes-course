@@ -20,7 +20,7 @@ flowchart TD
     M07 --> M23[23 Kustomize/Helm] --> M24[24 GitOps]
     M17 --> M25[25 CRDs/Operators] --> M26[26 Policies]
     M15 --> M27[27 DRA/GPUs/AI]
-    M16 & M20 & M21 --> M28[28 SRE reliability]
+    M16 & M20 & M21 --> M28[28 Reliability]
     M28 --> M29[29 What's new] --> CAP[🎓 Capstone]
 ```
 

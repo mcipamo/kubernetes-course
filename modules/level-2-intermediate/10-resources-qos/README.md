@@ -167,7 +167,7 @@ flowchart TB
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Requests are a capacity-planning contract.** Set them from observed usage (p95 + headroom), not guesses. VPA in recommendation mode helps (module 16).
 - **No requests = BestEffort = first to die.** Enforce requests with LimitRange or policy (module 26).

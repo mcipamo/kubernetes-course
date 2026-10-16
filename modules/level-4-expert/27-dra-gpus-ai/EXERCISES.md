@@ -83,23 +83,47 @@ p95 time-to-first-token SLO of 500 ms.
 ## ❓ Quiz
 
 1. Which object does a DRA driver publish to describe available devices?
-   a) **ResourceSlice** b) ResourceClaim c) Node label d) DeviceClass
+
+   - a) ResourceSlice
+   - b) ResourceClaim
+   - c) Node label
+   - d) DeviceClass
 
 2. DRA device selection criteria are written in…
-   a) Labels only b) Rego c) **CEL** d) JSONPath
+
+   - a) Labels only
+   - b) Rego
+   - c) CEL
+   - d) JSONPath
 
 3. With the device plugin model, a GPU request is…
-   a) **An integer extended resource like `nvidia.com/gpu: 1`** b) A CRD c) A claim object d) A node selector
+
+   - a) An integer extended resource like `nvidia.com/gpu: 1`
+   - b) A CRD
+   - c) A claim object
+   - d) A node selector
 
 4. Gang scheduling means…
-   a) Preempting everything b) Using one node c) Scheduling Pods alphabetically d) **Placing all Pods of a group together or none**
+
+   - a) Preempting everything
+   - b) Using one node
+   - c) Scheduling Pods alphabetically
+   - d) Placing all Pods of a group together or none
 
 5. Which project provides job queueing and quotas for batch/AI workloads?
-   a) **Kueue** b) Velero c) CoreDNS d) Argo CD
+
+   - a) Kueue
+   - b) Velero
+   - c) CoreDNS
+   - d) Argo CD
 
 <details><summary>Show answers</summary>
 
-1-a · 2-c · 3-a · 4-d · 5-a
+1. **a)** ResourceSlice
+2. **c)** CEL
+3. **a)** An integer extended resource like `nvidia.com/gpu: 1`
+4. **d)** Placing all Pods of a group together or none
+5. **a)** Kueue
 </details>
 
-➡️ Next module: [28 · SRE Reliability Engineering](../28-sre-reliability/)
+➡️ Next module: [28 · Reliability Engineering](../28-reliability/)

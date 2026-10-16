@@ -171,7 +171,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Config changes are deployments.** Most outages start with a change — treat a ConfigMap edit with the same care (review, rollout, rollback) as a new image.
 - **Version your config** (`app-config-v3` or hashed names) so a rollback restores matching code *and* config.

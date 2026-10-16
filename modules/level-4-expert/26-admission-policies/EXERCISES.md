@@ -94,23 +94,47 @@ violation dashboards per team.
 ## ❓ Quiz
 
 1. Which runs first in the admission chain?
-   a) Validating webhooks b) **Mutating admission** c) etcd write d) ValidatingAdmissionPolicy
+
+   - a) Validating webhooks
+   - b) Mutating admission
+   - c) etcd write
+   - d) ValidatingAdmissionPolicy
 
 2. ValidatingAdmissionPolicies are written in…
-   a) Rego b) Go c) **CEL** d) Lua
+
+   - a) Rego
+   - b) Go
+   - c) CEL
+   - d) Lua
 
 3. A `ValidatingAdmissionPolicy` without a binding…
-   a) Applies cluster-wide b) **Has no effect** c) Blocks everything d) Applies only to Pods
+
+   - a) Applies cluster-wide
+   - b) Has no effect
+   - c) Blocks everything
+   - d) Applies only to Pods
 
 4. A webhook with `failurePolicy: Fail` is unreachable. Matching requests are…
-   a) **Rejected** b) Retried forever c) Queued d) Allowed
+
+   - a) Rejected
+   - b) Retried forever
+   - c) Queued
+   - d) Allowed
 
 5. Which `validationActions` lets users see violations without being blocked?
-   a) **Warn** b) Deny c) Ignore d) Skip
+
+   - a) Warn
+   - b) Deny
+   - c) Ignore
+   - d) Skip
 
 <details><summary>Show answers</summary>
 
-1-b · 2-c · 3-b · 4-a · 5-a
+1. **b)** Mutating admission
+2. **c)** CEL
+3. **b)** Has no effect
+4. **a)** Rejected
+5. **a)** Warn
 </details>
 
 ➡️ Next module: [27 · DRA, GPUs and AI Workloads](../27-dra-gpus-ai/)

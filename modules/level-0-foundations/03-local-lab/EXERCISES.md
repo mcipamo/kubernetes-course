@@ -77,23 +77,47 @@ kind delete cluster --name kc-136
 ## ❓ Quiz
 
 1. What is a kind "node" physically?
-   a) A process on your laptop b) A cloud instance c) **A Docker container** d) A VM
+
+   - a) A process on your laptop
+   - b) A cloud instance
+   - c) A Docker container
+   - d) A VM
 
 2. Which kubeconfig element combines a cluster, a user and a namespace?
-   a) cluster b) **context** c) preferences d) user
+
+   - a) cluster
+   - b) context
+   - c) preferences
+   - d) user
 
 3. Why did the bare Pod not come back after the node failed?
-   a) **No controller owns it** b) It was too big c) kind does not support Pods d) The image was missing
+
+   - a) No controller owns it
+   - b) It was too big
+   - c) kind does not support Pods
+   - d) The image was missing
 
 4. How do you make an image built on your laptop available to kind nodes?
-   a) `docker push` b) **`kind load docker-image`** c) It works automatically d) `kubectl cp`
+
+   - a) `docker push`
+   - b) `kind load docker-image`
+   - c) It works automatically
+   - d) `kubectl cp`
 
 5. What should you always check before a destructive `kubectl` command?
-   a) Node count b) **The current context** c) The image tag d) Docker version
+
+   - a) Node count
+   - b) The current context
+   - c) The image tag
+   - d) Docker version
 
 <details><summary>Show answers</summary>
 
-1-c · 2-b · 3-a · 4-b · 5-b
+1. **c)** A Docker container
+2. **b)** context
+3. **a)** No controller owns it
+4. **b)** `kind load docker-image`
+5. **b)** The current context
 </details>
 
 ➡️ Next module: [04 · Kubernetes Architecture](../../level-1-basics/04-architecture/)

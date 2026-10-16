@@ -160,7 +160,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Rollback = `git revert`.** Fast, reviewed, auditable — practice it.
 - **Self-heal is a safety net, not a substitute for access control**: also remove humans' write access to prod.

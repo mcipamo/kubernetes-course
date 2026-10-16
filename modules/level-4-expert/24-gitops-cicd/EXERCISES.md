@@ -136,23 +136,47 @@ analysis sets the weight back to 0 and marks the rollout `Degraded` — no human
 ## ❓ Quiz
 
 1. In pull-based GitOps, who applies changes to the cluster?
-   a) The registry b) **An agent running in the cluster** c) The CI server d) The developer
+
+   - a) The registry
+   - b) An agent running in the cluster
+   - c) The CI server
+   - d) The developer
 
 2. `selfHeal: true` in Argo CD means…
-   a) **Manual changes in the cluster are reverted to Git** b) Pods restart on failure c) Git is fixed automatically d) Nodes are repaired
+
+   - a) Manual changes in the cluster are reverted to Git
+   - b) Pods restart on failure
+   - c) Git is fixed automatically
+   - d) Nodes are repaired
 
 3. An app is `Synced` but `Degraded`. This means…
-   a) Argo CD is down b) Git and cluster differ c) **The cluster matches Git, but the workload is unhealthy** d) Pruning failed
+
+   - a) Argo CD is down
+   - b) Git and cluster differ
+   - c) The cluster matches Git, but the workload is unhealthy
+   - d) Pruning failed
 
 4. The preferred GitOps rollback is…
-   a) Restarting Argo CD b) **`git revert` of the bad commit** c) Deleting the Application d) `kubectl rollout undo`
+
+   - a) Restarting Argo CD
+   - b) `git revert` of the bad commit
+   - c) Deleting the Application
+   - d) `kubectl rollout undo`
 
 5. Which tool keeps secrets in Git **encrypted**?
-   a) ConfigMaps b) Kustomize patches c) Annotations d) **Sealed Secrets / SOPS**
+
+   - a) ConfigMaps
+   - b) Kustomize patches
+   - c) Annotations
+   - d) Sealed Secrets / SOPS
 
 <details><summary>Show answers</summary>
 
-1-b · 2-a · 3-c · 4-b · 5-d
+1. **b)** An agent running in the cluster
+2. **a)** Manual changes in the cluster are reverted to Git
+3. **c)** The cluster matches Git, but the workload is unhealthy
+4. **b)** `git revert` of the bad commit
+5. **d)** Sealed Secrets / SOPS
 </details>
 
 ➡️ Next module: [25 · CRDs and Operators](../25-crds-operators/)

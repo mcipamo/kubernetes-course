@@ -168,7 +168,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Autoscaling is not capacity planning.** Know your max: quotas, node pools, DB connections and downstream limits all cap you.
 - **Scale up fast, scale down slow.** Flapping wastes money and causes cold-start latency.

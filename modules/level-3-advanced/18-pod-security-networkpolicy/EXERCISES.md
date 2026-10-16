@@ -107,23 +107,47 @@ teams, without causing outages.
 ## ❓ Quiz
 
 1. Which PSS level requires `runAsNonRoot` and dropping ALL capabilities?
-   a) privileged b) baseline c) none d) **restricted**
+
+   - a) privileged
+   - b) baseline
+   - c) none
+   - d) restricted
 
 2. By default (no policies), Pods in different namespaces…
-   a) Cannot communicate b) Need RBAC c) Need a Service d) **Can communicate freely**
+
+   - a) Cannot communicate
+   - b) Need RBAC
+   - c) Need a Service
+   - d) Can communicate freely
 
 3. In a NetworkPolicy `from` list, a `namespaceSelector` and `podSelector` in the **same item** mean…
-   a) OR b) Nothing c) **AND** d) NOT
+
+   - a) OR
+   - b) Nothing
+   - c) AND
+   - d) NOT
 
 4. After applying default-deny egress, what usually breaks first?
-   a) **DNS resolution** b) Volumes c) Probes d) Logs
+
+   - a) DNS resolution
+   - b) Volumes
+   - c) Probes
+   - d) Logs
 
 5. `hostUsers: false` enables…
-   a) Read-only root b) Privileged mode c) Host networking d) **User namespaces**
+
+   - a) Read-only root
+   - b) Privileged mode
+   - c) Host networking
+   - d) User namespaces
 
 <details><summary>Show answers</summary>
 
-1-d · 2-d · 3-c · 4-a · 5-d
+1. **d)** restricted
+2. **d)** Can communicate freely
+3. **c)** AND
+4. **a)** DNS resolution
+5. **d)** User namespaces
 </details>
 
 ➡️ Next module: [19 · Networking Deep Dive](../19-networking-deep-dive/)

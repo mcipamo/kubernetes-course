@@ -6,7 +6,7 @@
 |---|---|
 | ~30 h (1–2 weeks) | Modules 01–29 |
 
-You are the founding SRE of **KC Shop**, a small online store. Your job: take three services from
+You are the founding platform engineer of **KC Shop**, a small online store. Your job: take three services from
 "it runs on my laptop" to a platform you would be proud to put on call for. At the end you present it
 in a **Production Readiness Review (PRR)** — use the [self-check rubric](../docs/self-check-rubric.md) to review it.
 

@@ -68,23 +68,47 @@ direct buffers + GC overhead. 700 MB heap can easily mean > 1 GiB in total. Fixe
 ## ❓ Quiz
 
 1. What does the scheduler compare against node allocatable?
-   a) Limits b) QoS c) **Requests** d) Current usage
+
+   - a) Limits
+   - b) QoS
+   - c) Requests
+   - d) Current usage
 
 2. A container exceeds its CPU limit. It is…
-   a) Evicted b) OOMKilled c) **Throttled** d) Restarted
+
+   - a) Evicted
+   - b) OOMKilled
+   - c) Throttled
+   - d) Restarted
 
 3. Under memory pressure, which QoS class is evicted first?
-   a) **BestEffort** b) Burstable c) Random d) Guaranteed
+
+   - a) BestEffort
+   - b) Burstable
+   - c) Random
+   - d) Guaranteed
 
 4. Where do you look when a Deployment has fewer replicas than desired but no Pod is Pending?
-   a) Service b) CoreDNS logs c) Node events d) **ReplicaSet events (quota/admission errors)**
+
+   - a) Service
+   - b) CoreDNS logs
+   - c) Node events
+   - d) ReplicaSet events (quota/admission errors)
 
 5. Which object injects default requests into containers that do not set them?
-   a) ResourceQuota b) **LimitRange** c) HPA d) PriorityClass
+
+   - a) ResourceQuota
+   - b) LimitRange
+   - c) HPA
+   - d) PriorityClass
 
 <details><summary>Show answers</summary>
 
-1-c · 2-c · 3-a · 4-d · 5-b
+1. **c)** Requests
+2. **c)** Throttled
+3. **a)** BestEffort
+4. **d)** ReplicaSet events (quota/admission errors)
+5. **b)** LimitRange
 </details>
 
 ➡️ Next module: [11 · Probes and Pod Lifecycle](../11-probes-lifecycle/)

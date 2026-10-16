@@ -101,23 +101,47 @@ also do it ⚠️.)
 ## ❓ Quiz
 
 1. CPU utilization targets in an HPA are a percentage of…
-   a) **The request** b) Node capacity c) The limit d) The average of the cluster
+
+   - a) The request
+   - b) Node capacity
+   - c) The limit
+   - d) The average of the cluster
 
 2. Which component provides `metrics.k8s.io` in most clusters?
-   a) Prometheus b) kubelet directly c) etcd d) **metrics-server**
+
+   - a) Prometheus
+   - b) kubelet directly
+   - c) etcd
+   - d) metrics-server
 
 3. With several metrics, the HPA chooses…
-   a) **The highest recommendation** b) The average c) The lowest recommendation d) The first metric
+
+   - a) The highest recommendation
+   - b) The average
+   - c) The lowest recommendation
+   - d) The first metric
 
 4. Which tool adds nodes when Pods are Pending for lack of capacity?
-   a) **Cluster Autoscaler / Karpenter** b) KEDA c) VPA d) HPA
+
+   - a) Cluster Autoscaler / Karpenter
+   - b) KEDA
+   - c) VPA
+   - d) HPA
 
 5. In-place Pod resize uses…
-   a) **The `resize` subresource** b) A new Deployment c) `kubectl scale` d) `kubectl edit pod` on `spec.containers`
+
+   - a) The `resize` subresource
+   - b) A new Deployment
+   - c) `kubectl scale`
+   - d) `kubectl edit pod` on `spec.containers`
 
 <details><summary>Show answers</summary>
 
-1-a · 2-d · 3-a · 4-a · 5-a
+1. **a)** The request
+2. **d)** metrics-server
+3. **a)** The highest recommendation
+4. **a)** Cluster Autoscaler / Karpenter
+5. **a)** The `resize` subresource
 </details>
 
 ➡️ Next module: [17 · Security I: AuthN, AuthZ and RBAC](../17-security-rbac/)

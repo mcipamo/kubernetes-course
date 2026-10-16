@@ -194,7 +194,7 @@ sequenceDiagram
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Upgrades are routine, not projects.** Clusters that skip upgrades end up three versions behind, forced into a risky jump.
 - **Untested backups don't exist.** Schedule restore drills.

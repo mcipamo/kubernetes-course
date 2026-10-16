@@ -157,7 +157,7 @@ flowchart LR
 
 ---
 
-## 🧯 SRE mindset
+## 🧯 In production
 
 - **Labels are your query language during incidents.** "Show me all `team=payments` Pods not Ready on
   zone-b" is one command — if your labels are consistent.

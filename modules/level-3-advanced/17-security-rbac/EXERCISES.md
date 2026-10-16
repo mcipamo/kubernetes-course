@@ -76,23 +76,47 @@ List five checks you would include in a quarterly RBAC review, with the command 
 ## ❓ Quiz
 
 1. Does Kubernetes store User objects?
-   a) Only for admins b) **No — users come from external authenticators** c) Only with OIDC d) Yes, in etcd
+
+   - a) Only for admins
+   - b) No — users come from external authenticators
+   - c) Only with OIDC
+   - d) Yes, in etcd
 
 2. A ClusterRole bound with a **RoleBinding** grants permissions…
-   a) **Only in the RoleBinding's namespace** b) Nowhere c) Cluster-wide d) Only on cluster-scoped resources
+
+   - a) Only in the RoleBinding's namespace
+   - b) Nowhere
+   - c) Cluster-wide
+   - d) Only on cluster-scoped resources
 
 3. Which permission effectively exposes every Secret in a namespace?
-   a) `watch events` b) `list services` c) **`create pods`** d) `get configmaps`
+
+   - a) `watch events`
+   - b) `list services`
+   - c) `create pods`
+   - d) `get configmaps`
 
 4. How do you prevent a Pod from receiving a ServiceAccount token?
-   a) It is impossible b) Use `default` c) Delete the SA d) **`automountServiceAccountToken: false`**
+
+   - a) It is impossible
+   - b) Use `default`
+   - c) Delete the SA
+   - d) `automountServiceAccountToken: false`
 
 5. RBAC rules can…
-   a) Allow and deny b) **Only allow** c) Allow per IP d) Only deny
+
+   - a) Allow and deny
+   - b) Only allow
+   - c) Allow per IP
+   - d) Only deny
 
 <details><summary>Show answers</summary>
 
-1-b · 2-a · 3-c · 4-d · 5-b
+1. **b)** No — users come from external authenticators
+2. **a)** Only in the RoleBinding's namespace
+3. **c)** `create pods`
+4. **d)** `automountServiceAccountToken: false`
+5. **b)** Only allow
 </details>
 
 ➡️ Next module: [18 · Security II: Pod Security and NetworkPolicy](../18-pod-security-networkpolicy/)

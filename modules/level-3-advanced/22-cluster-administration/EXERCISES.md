@@ -86,23 +86,47 @@ Mature teams prepare **both**, and practice them with game days. Define and meas
 ## ❓ Quiz
 
 1. Which command evicts Pods while respecting PodDisruptionBudgets?
-   a) `kubectl cordon` b) `kubectl taint` c) `kubectl delete node` d) **`kubectl drain`**
+
+   - a) `kubectl cordon`
+   - b) `kubectl taint`
+   - c) `kubectl delete node`
+   - d) `kubectl drain`
 
 2. kubeadm leaf certificates are valid by default for…
-   a) 90 days b) 10 years c) **1 year** d) 5 years
+
+   - a) 90 days
+   - b) 10 years
+   - c) 1 year
+   - d) 5 years
 
 3. You must upgrade from 1.35 to 1.37. You should…
-   a) **Go 1.35 → 1.36 → 1.37** b) Jump directly c) Reinstall d) Upgrade nodes first
+
+   - a) Go 1.35 → 1.36 → 1.37
+   - b) Jump directly
+   - c) Reinstall
+   - d) Upgrade nodes first
 
 4. Where must an etcd restore be written?
-   a) Into a ConfigMap b) Into the API server c) **To a new data directory, then point etcd at it** d) Over the current data dir
+
+   - a) Into a ConfigMap
+   - b) Into the API server
+   - c) To a new data directory, then point etcd at it
+   - d) Over the current data dir
 
 5. After enabling encryption at rest, existing Secrets are…
-   a) Deleted b) **Still unencrypted until rewritten** c) Moved to KMS d) Encrypted automatically
+
+   - a) Deleted
+   - b) Still unencrypted until rewritten
+   - c) Moved to KMS
+   - d) Encrypted automatically
 
 <details><summary>Show answers</summary>
 
-1-d · 2-c · 3-a · 4-c · 5-b
+1. **d)** `kubectl drain`
+2. **c)** 1 year
+3. **a)** Go 1.35 → 1.36 → 1.37
+4. **c)** To a new data directory, then point etcd at it
+5. **b)** Still unencrypted until rewritten
 </details>
 
 🎯 **End of Level 3.** Do **Practice round 3** (CKA/CKS style): 12 tasks in 2 hours across modules 16–22,
