@@ -17,7 +17,7 @@
 
 ## 🧠 The analogy: renting specialized lab equipment
 
-A university has ordinary desks (CPU, memory) and a few **very expensive microscopes** (GPUs, TPUs,
+A research center has ordinary desks (CPU, memory) and a few **very expensive microscopes** (GPUs, TPUs,
 FPGAs, fast NICs).
 
 - **Device plugins** are the old **sign-up sheet**: "Lab B has 4 microscopes". You can only ask for "1

@@ -4,7 +4,7 @@
 
 # Kubernetes Course
 
-### A University-Style Program in Platform Engineering and Reliability
+### A Hands-On Program in Platform Engineering and Reliability
 
 *From zero to expert in Kubernetes, with an SRE mindset*
 
@@ -23,7 +23,7 @@
 *"I have never used a container"* to *"I design, secure and operate production clusters"*.
 
 It is built on the [official Kubernetes documentation](https://kubernetes.io/docs/home/) (v1.37) and
-organized like a university program: **5 levels, 29 modules, 29 hands-on labs, 150+ exercises and a
+organized as a step-by-step program: **5 levels, 29 modules, 29 hands-on labs, 150+ exercises and a
 capstone project**.
 
 | Who it is for | What you will achieve |

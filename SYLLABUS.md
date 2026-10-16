@@ -26,7 +26,7 @@ By the end of the program you will be able to:
 6. **Design** reliable platforms with SLOs, autoscaling, GitOps and disaster recovery.
 7. **Extend** Kubernetes with CRDs, operators and policies.
 
-## 🧮 Academic structure
+## 🧮 Course structure
 
 | Code | Level | Modules | Credits | Hours | Weeks |
 |---|---|---|---|---|---|
@@ -91,7 +91,7 @@ By the end of the program you will be able to:
 | `LAB.md` | Step-by-step lab with ✅ checks and a 💥 deliberate failure |
 | `EXERCISES.md` | 🟢🟡🔴 exercises · quiz · solutions |
 
-## ⚖️ Academic policy
+## ⚖️ Course policy
 
 - Do every lab **on your own cluster**. Never on a production cluster.
 - Copying commands is fine; **understanding why they work** is the goal.
