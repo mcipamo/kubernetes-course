@@ -59,14 +59,14 @@ flowchart LR
 
 ## 📚 Curriculum
 
-### 🌱 Level 0 — Foundations *(3 credits · ~12 h)*
+### 🌱 Level 0 — Foundations *(~12 h)*
 | # | Module | The question it answers |
 |---|---|---|
 | 01 | [Containers and why Kubernetes](modules/level-0-foundations/01-containers-and-kubernetes/) | What problem does Kubernetes solve? |
 | 02 | [Linux, networking and YAML for Kubernetes](modules/level-0-foundations/02-linux-networking-yaml/) | What do I need to know before I start? |
 | 03 | [Your local lab](modules/level-0-foundations/03-local-lab/) | How do I run a cluster on my laptop? |
 
-### 🧱 Level 1 — Basics *(6 credits · ~30 h)*
+### 🧱 Level 1 — Basics *(~30 h)*
 | # | Module | The question it answers |
 |---|---|---|
 | 04 | [Kubernetes architecture](modules/level-1-basics/04-architecture/) | What pieces make up a cluster and how do they talk? |
@@ -76,7 +76,7 @@ flowchart LR
 | 08 | [Services and DNS](modules/level-1-basics/08-services-dns/) | How do apps find other apps? |
 | 09 | [ConfigMaps and Secrets](modules/level-1-basics/09-configmaps-secrets/) | How do I keep configuration out of my code? |
 
-### ⚙️ Level 2 — Intermediate *(6 credits · ~36 h)*
+### ⚙️ Level 2 — Intermediate *(~36 h)*
 | # | Module | The question it answers |
 |---|---|---|
 | 10 | [Resources, QoS and quotas](modules/level-2-intermediate/10-resources-qos/) | How much CPU and memory does each app get? |
@@ -86,7 +86,7 @@ flowchart LR
 | 14 | [Ingress and Gateway API](modules/level-2-intermediate/14-ingress-gateway-api/) | How does traffic get in from the Internet? |
 | 15 | [Scheduling](modules/level-2-intermediate/15-scheduling/) | How does Kubernetes decide where each Pod runs? |
 
-### 🛡️ Level 3 — Advanced *(7 credits · ~45 h)*
+### 🛡️ Level 3 — Advanced *(~45 h)*
 | # | Module | The question it answers |
 |---|---|---|
 | 16 | [Autoscaling](modules/level-3-advanced/16-autoscaling/) | How do I grow and shrink automatically? |
@@ -97,7 +97,7 @@ flowchart LR
 | 21 | [Systematic troubleshooting](modules/level-3-advanced/21-troubleshooting/) | How do I find the root cause fast? |
 | 22 | [Cluster administration](modules/level-3-advanced/22-cluster-administration/) | How do I upgrade, back up and maintain a cluster? |
 
-### 🚀 Level 4 — Expert *(7 credits · ~45 h)*
+### 🚀 Level 4 — Expert *(~45 h)*
 | # | Module | The question it answers |
 |---|---|---|
 | 23 | [Kustomize and Helm](modules/level-4-expert/23-kustomize-helm/) | How do I package and reuse manifests? |
@@ -108,7 +108,7 @@ flowchart LR
 | 28 | [SRE reliability engineering](modules/level-4-expert/28-sre-reliability/) | How do I design so it does not go down? |
 | 29 | [What's new in v1.35 – v1.37](modules/level-4-expert/29-whats-new/) | What is the latest and greatest? |
 
-### 🎓 [Capstone — Production-ready platform](capstone/) *(4 credits · ~30 h)*
+### 🎓 [Capstone — Production-ready platform](capstone/) *(~30 h)*
 
 ## 🚀 Getting started
 
@@ -132,7 +132,7 @@ open modules/level-0-foundations/01-containers-and-kubernetes/README.md
 ```text
 kubernetes-course/
 ├── README.md        ← you are here
-├── SYLLABUS.md      ← course outline: credits, grading, schedule
+├── SYLLABUS.md      ← course outline: structure, grading, schedule
 ├── modules/         ← 5 levels × modules (README · LAB · EXERCISES)
 ├── capstone/        ← final project with a Production Readiness Review
 ├── docs/            ← learning paths, glossary, cheatsheet, setup, rubric
@@ -143,7 +143,7 @@ kubernetes-course/
 
 | Resource | Description |
 |---|---|
-| [📅 Syllabus](SYLLABUS.md) | Full program, credits, grading and suggested schedule |
+| [📅 Syllabus](SYLLABUS.md) | Full program, grading and suggested schedule |
 | [🧭 Learning paths](docs/learning-path.md) | Paths by role and by certification |
 | [⌨️ kubectl cheatsheet](docs/kubectl-cheatsheet.md) | The commands you will use every day |
 | [📖 Glossary](docs/glossary.md) | Every term, explained in one line |
