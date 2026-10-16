@@ -49,10 +49,17 @@ kubectl uncordon kc-worker
 
 ```bash
 kubectl create configmap before-backup --from-literal=state=present
-ETCD="kubectl -n kube-system exec etcd-kc-control-plane --"
-CERTS="--endpoints=https://127.0.0.1:2379 --cacert=/etc/kubernetes/pki/etcd/ca.crt --cert=/etc/kubernetes/pki/etcd/server.crt --key=/etc/kubernetes/pki/etcd/server.key"
-$ETCD etcdctl $CERTS snapshot save /var/lib/etcd/kc-snapshot.db
-$ETCD etcdutl snapshot status /var/lib/etcd/kc-snapshot.db -w table
+# Helper functions (work in bash and zsh)
+etcdctl_kc() {
+  kubectl -n kube-system exec etcd-kc-control-plane -- etcdctl \
+    --endpoints=https://127.0.0.1:2379 \
+    --cacert=/etc/kubernetes/pki/etcd/ca.crt \
+    --cert=/etc/kubernetes/pki/etcd/server.crt \
+    --key=/etc/kubernetes/pki/etcd/server.key "$@"
+}
+etcdutl_kc() { kubectl -n kube-system exec etcd-kc-control-plane -- etcdutl "$@"; }
+etcdctl_kc snapshot save /var/lib/etcd/kc-snapshot.db
+etcdutl_kc snapshot status /var/lib/etcd/kc-snapshot.db -w table
 ```
 
 ✅ **Check:** the status table shows a hash, revision and total keys (hundreds or thousands).
@@ -72,7 +79,7 @@ kubectl get deploy,cm
 ### Step 5 · Restore to a new data directory
 
 ```bash
-$ETCD etcdutl snapshot restore /var/lib/etcd/kc-snapshot.db --data-dir /var/lib/etcd/restored
+etcdutl_kc snapshot restore /var/lib/etcd/kc-snapshot.db --data-dir /var/lib/etcd/restored
 docker exec kc-control-plane ls /var/lib/etcd/restored
 ```
 
@@ -86,17 +93,28 @@ sleep 60
 kubectl get --raw='/readyz' ; echo
 ```
 
-The API server may be unavailable for a minute while etcd restarts. Retry until it says `ok`.
+Wait until the API server answers again (it can take about a minute while etcd restarts):
 
 ```bash
+until [ "$(kubectl get --raw='/readyz' 2>/dev/null)" = "ok" ]; do sleep 5; done; echo "API is back"
+```
+
+The API server still serves its **cached** view of the old data. As the official guide says, restart
+the control-plane components so they read the restored state:
+
+```bash
+for c in kube-apiserver kube-controller-manager kube-scheduler; do
+  docker exec kc-control-plane sh -c "crictl stop \$(crictl ps --name $c -q)"
+done
+until [ "$(kubectl get --raw='/readyz' 2>/dev/null)" = "ok" ]; do sleep 5; done
 kubectl -n lab-22 get deploy,cm
 ```
 
 ✅ **Check:** `web` and `before-backup` are **back**; `after-backup` is **gone** (it was created after the snapshot).
 That is your **RPO** in action: you lose everything since the last backup.
 
-> In a real cluster, also restart the controllers and kubelets reconcile against the restored state;
-> some Pods may be recreated. Read the official guide before doing this in production.
+> In production, stop **all** API servers before restoring, restore every etcd member, then start
+> the control plane again. Read the official guide before doing this for real.
 
 ## Part C — Certificates
 
@@ -116,7 +134,7 @@ that is a future outage unless something renews it.
 
 ```bash
 kubectl create secret generic plain --from-literal=password=VisibleInEtcd
-$ETCD etcdctl $CERTS get /registry/secrets/lab-22/plain | strings | grep Visible
+etcdctl_kc get /registry/secrets/lab-22/plain | strings | grep Visible
 ```
 
 ### Step 8 · Enable an `aescbc` provider
@@ -146,9 +164,9 @@ sleep 60; kubectl get --raw='/readyz'; echo
 
 ```bash
 kubectl create secret generic sealed --from-literal=password=HiddenInEtcd
-$ETCD etcdctl $CERTS get /registry/secrets/lab-22/sealed | strings | head -3
+etcdctl_kc get /registry/secrets/lab-22/sealed | strings | head -3
 kubectl get secrets -n lab-22 -o json | kubectl replace -f -
-$ETCD etcdctl $CERTS get /registry/secrets/lab-22/plain | strings | grep -c Visible
+etcdctl_kc get /registry/secrets/lab-22/plain | strings | grep -c Visible
 ```
 
 ✅ **Check:** the stored value starts with `k8s:enc:aescbc:v1:key1` and the password is not readable;

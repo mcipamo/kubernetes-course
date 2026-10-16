@@ -71,3 +71,12 @@ echo 'compdef __start_kubectl k' >> ~/.zshrc
 echo 'source <(kubectl completion bash)' >> ~/.bashrc
 echo 'alias k=kubectl; complete -o default -F __start_kubectl k' >> ~/.bashrc
 ```
+
+## 🩹 Troubleshooting your setup
+
+| Symptom | Cause | Fix |
+|---|---|---|
+| `kubectl` warns about version skew, or a flag like `--subresource resize` is unknown | Your `kubectl` is more than one minor version away from the cluster | Install a `kubectl` within ±1 minor of the server (`kubectl version`) |
+| `kind load docker-image` says `image … not present locally` (Podman) | It calls the `docker` binary, and Podman names images `localhost/<name>` | `podman save -o img.tar localhost/<name>:<tag>` then `kind load image-archive img.tar --name kc` |
+| `docker exec` not found (Podman) | Podman is your container engine | Use `podman exec <node>` (or `alias docker=podman`) |
+| `helm install oci://…` fails with `docker-credential-desktop: executable file not found` | `~/.docker/config.json` still points to Docker Desktop's credential helper | Remove the `"credsStore"` line from that file, or run with `DOCKER_CONFIG=$(mktemp -d)` |

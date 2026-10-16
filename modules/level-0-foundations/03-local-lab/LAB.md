@@ -113,6 +113,15 @@ kubectl -n lab-03 port-forward pod/myapp 8000:8000 &
 sleep 2; curl localhost:8000; kill %1
 ```
 
+> 🦭 **Using Podman instead of Docker?** Podman names local images `localhost/<name>`, and
+> `kind load docker-image` needs the `docker` binary. Load the image through an archive instead:
+> ```bash
+> podman save -o hello.tar localhost/kc/hello:1.0
+> kind load image-archive hello.tar --name kc
+> kubectl -n lab-03 run myapp --image=localhost/kc/hello:1.0 --image-pull-policy=IfNotPresent --port=8000
+> ```
+> In every lab, replace `docker exec <node>` with `podman exec <node>`.
+
 ✅ **Check:** you get `Hello from myapp · version 1.0` — your image, running on Kubernetes.
 
 ## 💥 Step 8 · Break it on purpose

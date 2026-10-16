@@ -58,11 +58,17 @@ spec:
 
 ```bash
 kubectl apply -f gateway.yaml
-kubectl -n lab-14-infra wait --for=condition=Programmed gateway/public --timeout=120s
-kubectl -n lab-14-infra get gateway public
+kubectl -n lab-14-infra wait --for=condition=Accepted gateway/public --timeout=120s
+kubectl -n lab-14-infra get gateway public -o jsonpath='{range .status.conditions[*]}{.type}={.status} ({.reason}){"\n"}{end}'
+kubectl -n envoy-gateway-system get pods
 ```
 
-✅ **Check:** `PROGRAMMED True`. (The address may stay empty on kind — there is no cloud load balancer.)
+✅ **Check:** `Accepted=True`, and an `envoy-lab-14-infra-public-…` Pod is `Running`.
+
+> 💡 On kind you will see `Programmed=False (AddressNotAssigned)`. That is expected: the Gateway's
+> Service is of type `LoadBalancer` and kind has no cloud load balancer to give it an address. The Envoy
+> proxy works anyway — in the next step you reach it with a port-forward. On a cloud cluster (or with
+> [cloud-provider-kind](https://github.com/kubernetes-sigs/cloud-provider-kind)) it becomes `Programmed=True`.
 
 ## Step 3 · Expose the Gateway on your laptop
 
@@ -208,11 +214,20 @@ curl -s -o /dev/null -w "%{http_code}\n" -H 'Host: rogue.kc.local' localhost:888
 ```bash
 kubectl -n lab-14-rogue get httproute rogue -o yaml | yq '.status.parents[].conditions'
 ```
+Both problems show up at the same time:
 1. `Accepted: False`, reason **`NotAllowedByListeners`** — the namespace lacks the `gateway-access=true`
    label required by the listener. This is the Gateway API safety model working as designed.
-2. After labeling the namespace (`kubectl label ns lab-14-rogue gateway-access=true`), `ResolvedRefs`
-   becomes **`False` / `BackendNotFound`** or the backend fails, because the Service port is **80**, not 8080.
-   Fix the port in `backendRefs`, and the route works.
+2. `ResolvedRefs: False`, reason **`PortNotFound`** — the Service listens on port **80**, not 8080.
+
+Fix both:
+```bash
+kubectl label ns lab-14-rogue gateway-access=true
+kubectl -n lab-14-rogue patch httproute rogue --type=json \
+  -p='[{"op":"replace","path":"/spec/rules/0/backendRefs/0/port","value":80}]'
+curl -s -o /dev/null -w "%{http_code}\n" -H 'Host: rogue.kc.local' localhost:8888/    # 200
+```
+> The route status may not refresh right after you only label the namespace; it is re-evaluated when the
+> route itself changes (the port patch).
 </details>
 
 ## 🧹 Cleanup

@@ -189,25 +189,25 @@ kubectl scale deployment inference --replicas=2
 
 ```bash
 # Check the latest release at https://github.com/kubernetes-sigs/kueue/releases
-KUEUE_VERSION=v0.14.0
+KUEUE_VERSION=v0.20.2          # tested; newer releases should work too
 kubectl apply --server-side -f https://github.com/kubernetes-sigs/kueue/releases/download/${KUEUE_VERSION}/manifests.yaml
 kubectl -n kueue-system rollout status deployment/kueue-controller-manager --timeout=180s
 ```
 
 ### Step 7 · A quota and a queue
 
-> ⚠️ Newer Kueue releases may serve a newer API version (e.g., `v1beta2`). Check with
+> ⚠️ Kueue v0.20 serves only `kueue.x-k8s.io/v1beta2`. If you install a different release, check with
 > `kubectl api-resources --api-group=kueue.x-k8s.io` and adjust `apiVersion` below.
 
 Create `kueue.yaml`:
 
 ```yaml
-apiVersion: kueue.x-k8s.io/v1beta1
+apiVersion: kueue.x-k8s.io/v1beta2
 kind: ResourceFlavor
 metadata:
   name: default-flavor
 ---
-apiVersion: kueue.x-k8s.io/v1beta1
+apiVersion: kueue.x-k8s.io/v1beta2
 kind: ClusterQueue
 metadata:
   name: ml-team
@@ -221,7 +221,7 @@ spec:
             - { name: cpu, nominalQuota: 1 }
             - { name: memory, nominalQuota: 1Gi }
 ---
-apiVersion: kueue.x-k8s.io/v1beta1
+apiVersion: kueue.x-k8s.io/v1beta2
 kind: LocalQueue
 metadata:
   name: training
