@@ -19,7 +19,7 @@
 
 ## 📋 About the program
 
-**Kubernetes Course** is a free, open course that takes you from
+**Kubernetes Course** takes you from
 *"I have never used a container"* to *"I design, secure and operate production clusters"*.
 
 It is built on the [official Kubernetes documentation](https://kubernetes.io/docs/home/) (v1.37) and
