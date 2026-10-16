@@ -2,9 +2,9 @@
 
 # 🎓 Capstone · A Production-Ready Platform
 
-| Code | Duration | Prerequisites |
-|---|---|---|
-| KC-590 | ~30 h (1–2 weeks) | Modules 01–29 |
+| Duration | Prerequisites |
+|---|---|
+| ~30 h (1–2 weeks) | Modules 01–29 |
 
 You are the founding SRE of **KC Shop**, a small online store. Your job: take three services from
 "it runs on my laptop" to a platform you would be proud to put on call for. At the end you present it

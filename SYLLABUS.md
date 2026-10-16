@@ -5,7 +5,6 @@
 | Field | Detail |
 |---|---|
 | **Program** | Platform Engineering and Reliability |
-| **Course codes** | KC-101 to KC-590 |
 | **Total effort** | ~200 hours |
 | **Suggested length** | 20 weeks at ~10 h/week |
 | **Format** | Self-paced, hands-on, 100% on a local lab cluster |
@@ -28,14 +27,14 @@ By the end of the program you will be able to:
 
 ## 🧮 Course structure
 
-| Code | Level | Modules | Hours | Weeks |
-|---|---|---|---|---|
-| KC-101 | 🌱 Foundations | 01–03 | 12 | 1–2 |
-| KC-201 | 🧱 Basics | 04–09 | 30 | 3–6 |
-| KC-301 | ⚙️ Intermediate | 10–15 | 36 | 7–10 |
-| KC-401 | 🛡️ Advanced | 16–22 | 45 | 11–15 |
-| KC-501 | 🚀 Expert | 23–29 | 45 | 16–19 |
-| KC-590 | 🎓 Capstone | — | 30 | 20 |
+| Level | Modules | Hours | Weeks |
+|---|---|---|---|
+| 🌱 Foundations | 01–03 | 12 | 1–2 |
+| 🧱 Basics | 04–09 | 30 | 3–6 |
+| ⚙️ Intermediate | 10–15 | 36 | 7–10 |
+| 🛡️ Advanced | 16–22 | 45 | 11–15 |
+| 🚀 Expert | 23–29 | 45 | 16–19 |
+| 🎓 Capstone | — | 30 | 20 |
 
 ## 📏 Assessment
 
