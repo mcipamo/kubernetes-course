@@ -115,7 +115,7 @@ List four ways a Secret's value can leak in a typical cluster and one control fo
 1-c · 2-d · 3-b · 4-d · 5-c
 </details>
 
-🎯 **End of Level 1.** Before moving on, take **Mock exam 1** (CKAD style): ask your tutor or a
+🎯 **End of Level 1.** Before moving on, do **Practice round 1** (CKAD style): ask your tutor or a
 classmate to break 5 things in your `kc` cluster using modules 04–09 and fix them in 30 minutes.
 
 ➡️ Next module: [10 · Resources, QoS and Quotas](../../level-2-intermediate/10-resources-qos/)

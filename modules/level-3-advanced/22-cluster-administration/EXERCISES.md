@@ -105,7 +105,7 @@ Mature teams prepare **both**, and practice them with game days. Define and meas
 1-d · 2-c · 3-a · 4-c · 5-b
 </details>
 
-🎯 **End of Level 3.** Take **Mock exam 3** (CKA/CKS style): 12 tasks in 2 hours across modules 16–22,
+🎯 **End of Level 3.** Do **Practice round 3** (CKA/CKS style): 12 tasks in 2 hours across modules 16–22,
 including one etcd restore and one broken node.
 
 ➡️ Next module: [23 · Kustomize and Helm](../../level-4-expert/23-kustomize-helm/)

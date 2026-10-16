@@ -4,7 +4,7 @@
 
 # Kubernetes Course
 
-### A Hands-On Program in Platform Engineering and Reliability
+### A Hands-On Guide to Platform Engineering and Reliability
 
 *From zero to expert in Kubernetes, with an SRE mindset*
 
@@ -17,13 +17,13 @@
 
 ---
 
-## 📋 About the program
+## 📋 About this course
 
 **Kubernetes Course** takes you from
 *"I have never used a container"* to *"I design, secure and operate production clusters"*.
 
 It is built on the [official Kubernetes documentation](https://kubernetes.io/docs/home/) (v1.37) and
-organized as a step-by-step program: **5 levels, 29 modules, 29 hands-on labs, 150+ exercises and a
+organized step by step: **5 levels, 29 modules, 29 hands-on labs, 150+ exercises and a
 capstone project**.
 
 | Who it is for | What you will achieve |
@@ -31,7 +31,7 @@ capstone project**.
 | Developers who deploy to Kubernetes | Understand what really happens when you run `kubectl apply` |
 | System administrators / Ops | Operate, upgrade and debug clusters with confidence |
 | Aspiring SREs / Platform Engineers | Design reliable platforms with SLOs, security and GitOps |
-| CKAD / CKA / CKS candidates | Guided practice with broken scenarios and mock exams |
+| CKAD / CKA / CKS candidates | Guided practice with broken scenarios and practice rounds |
 
 ## 🧭 Teaching philosophy
 
@@ -132,10 +132,10 @@ open modules/level-0-foundations/01-containers-and-kubernetes/README.md
 ```text
 kubernetes-course/
 ├── README.md        ← you are here
-├── SYLLABUS.md      ← course outline: structure, grading, schedule
+├── STUDY-PLAN.md    ← levels, progress checkpoints, suggested schedule
 ├── modules/         ← 5 levels × modules (README · LAB · EXERCISES)
 ├── capstone/        ← final project with a Production Readiness Review
-├── docs/            ← learning paths, glossary, cheatsheet, setup, rubric
+├── docs/            ← learning paths, glossary, cheatsheet, setup, self-check rubric
 └── assets/          ← Kubernetes logo (trademark of The Linux Foundation)
 ```
 
@@ -143,12 +143,12 @@ kubernetes-course/
 
 | Resource | Description |
 |---|---|
-| [📅 Syllabus](SYLLABUS.md) | Full program, grading and suggested schedule |
+| [📅 Study plan](STUDY-PLAN.md) | Levels, progress checkpoints and suggested schedule |
 | [🧭 Learning paths](docs/learning-path.md) | Paths by role and by certification |
 | [⌨️ kubectl cheatsheet](docs/kubectl-cheatsheet.md) | The commands you will use every day |
 | [📖 Glossary](docs/glossary.md) | Every term, explained in one line |
 | [🧪 Environment setup](docs/setup.md) | kind, minikube and k3d on macOS, Linux and Windows |
-| [📏 Grading rubric](docs/grading-rubric.md) | How labs and the capstone are assessed |
+| [📏 Self-check rubric](docs/self-check-rubric.md) | A checklist to review your labs and capstone |
 | [🎓 Official tutorials companion](docs/official-tutorials.md) | Every kubernetes.io tutorial mapped to a course module |
 
 ## 🤝 Contributing

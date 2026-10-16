@@ -1,10 +1,10 @@
 <img src="assets/kubernetes-icon-color.svg" alt="Kubernetes logo" width="64" align="right">
 
-# 📅 Syllabus — Kubernetes Course
+# 📅 Study Plan — Kubernetes Course
 
 | Field | Detail |
 |---|---|
-| **Program** | Platform Engineering and Reliability |
+| **Focus** | Platform engineering and reliability |
 | **Total effort** | ~200 hours |
 | **Suggested length** | 20 weeks at ~10 h/week |
 | **Format** | Self-paced, hands-on, 100% on a local lab cluster |
@@ -13,9 +13,9 @@
 
 ---
 
-## 🎯 Program learning outcomes
+## 🎯 What you will learn
 
-By the end of the program you will be able to:
+By the end of the course you will be able to:
 
 1. **Explain** the Kubernetes architecture and its declarative reconciliation model.
 2. **Deploy** stateless and stateful applications with configuration, storage and networking.
@@ -25,7 +25,7 @@ By the end of the program you will be able to:
 6. **Design** reliable platforms with SLOs, autoscaling, GitOps and disaster recovery.
 7. **Extend** Kubernetes with CRDs, operators and policies.
 
-## 🧮 Course structure
+## 🧮 Levels
 
 | Level | Modules | Hours | Weeks |
 |---|---|---|---|
@@ -36,16 +36,16 @@ By the end of the program you will be able to:
 | 🚀 Expert | 23–29 | 45 | 16–19 |
 | 🎓 Capstone | — | 30 | 20 |
 
-## 📏 Assessment
+## ✅ How to check your progress
 
-| Component | Weight | How it is assessed |
-|---|---|---|
-| Labs (29) | 35% | Every ✅ check passes + diagnosis of the 💥 failure |
-| Exercises and quizzes | 20% | Self-assessed with solutions; ≥ 80% to move to the next level |
-| Mock exams (3) | 15% | End of levels 1, 2 and 3 (CKAD / CKA / CKS style) |
-| Capstone | 30% | Production Readiness Review using the [rubric](docs/grading-rubric.md) |
+There are no grades — this is a hands-on guide. Use these checkpoints to know you are ready to move on:
 
-**To pass:** ≥ 70% overall and a passing capstone.
+| Checkpoint | You are ready when… |
+|---|---|
+| Labs | Every ✅ check passes and you can explain the cause of the 💥 failure |
+| Exercises and quizzes | You solve most of them before opening the solutions |
+| Practice rounds | You fix the broken scenarios at the end of levels 1, 2 and 3 without looking at notes |
+| Capstone | Your platform passes the [self-check rubric](docs/self-check-rubric.md) |
 
 ## 📆 Suggested schedule
 
@@ -56,21 +56,21 @@ By the end of the program you will be able to:
 | 3 | 04, 05 | — |
 | 4 | 06, 07 | — |
 | 5 | 08 | — |
-| 6 | 09 | 📝 Mock exam 1 (CKAD style) |
+| 6 | 09 | 📝 Practice round 1 (CKAD style) |
 | 7 | 10, 11 | — |
 | 8 | 12, 13 | — |
 | 9 | 14 | — |
-| 10 | 15 | 📝 Mock exam 2 (CKA style, part 1) |
+| 10 | 15 | 📝 Practice round 2 (CKA style, part 1) |
 | 11 | 16, 17 | — |
 | 12 | 18 | — |
 | 13 | 19, 20 | — |
 | 14 | 21 | — |
-| 15 | 22 | 📝 Mock exam 3 (CKA/CKS style) |
+| 15 | 22 | 📝 Practice round 3 (CKA/CKS style) |
 | 16 | 23, 24 | — |
 | 17 | 25, 26 | — |
 | 18 | 27, 28 | — |
 | 19 | 29 | — |
-| 20 | Capstone | 🎓 Production Readiness Review |
+| 20 | Capstone | 🎓 Final review of your platform |
 
 ## 🧰 Technical requirements
 
@@ -90,7 +90,7 @@ By the end of the program you will be able to:
 | `LAB.md` | Step-by-step lab with ✅ checks and a 💥 deliberate failure |
 | `EXERCISES.md` | 🟢🟡🔴 exercises · quiz · solutions |
 
-## ⚖️ Course policy
+## 🤝 Ground rules
 
 - Do every lab **on your own cluster**. Never on a production cluster.
 - Copying commands is fine; **understanding why they work** is the goal.

@@ -101,6 +101,6 @@ frontend, (2) a GPU inference service, (3) nightly batch jobs that must never di
 1-b · 2-c · 3-b · 4-b · 5-b
 </details>
 
-🎯 **End of Level 2.** Take **Mock exam 2** (CKA style, part 1): 8 tasks in 60 minutes covering modules 10–15.
+🎯 **End of Level 2.** Do **Practice round 2** (CKA style, part 1): 8 tasks in 60 minutes covering modules 10–15.
 
 ➡️ Next module: [16 · Autoscaling](../../level-3-advanced/16-autoscaling/)
