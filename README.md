@@ -30,7 +30,7 @@ capstone project**.
 |---|---|
 | Developers who deploy to Kubernetes | Understand what really happens when you run `kubectl apply` |
 | System administrators / Ops | Operate, upgrade and debug clusters with confidence |
-| Aspiring SREs / Platform Engineers | Design reliable platforms with SLOs, security and GitOps |
+| Aspiring Platform Engineers | Design reliable platforms with SLOs, security and GitOps |
 | CKAD / CKA / CKS candidates | Guided practice with broken scenarios and practice rounds |
 
 ## 🧭 Teaching philosophy

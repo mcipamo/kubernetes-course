@@ -30,7 +30,7 @@ flowchart TD
 |---|---|---|
 | 👩‍💻 Developer | 01–14, 16, 20, 23, 24 | ~10 weeks |
 | 🛠️ Administrator / Ops | All of levels 0–3, then 23, 28 | ~15 weeks |
-| 🧯 SRE / Platform Engineer | Full course + capstone | 20 weeks |
+| 🧯 Platform Engineer | Full course + capstone | 20 weeks |
 | 🔐 Security | 01–09, 17, 18, 22, 25, 26 | ~10 weeks |
 | 🤖 ML/AI Engineer | 01–13, 15, 16, 27 | ~10 weeks |
 
